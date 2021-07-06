@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Alada" parallel="false">
+
+<parameter name="url" value="https://alada.vn/tai-khoan/dang-nhap.html" />
+
+  <test name="Run on FIREFOX">
+  <parameter name="browser" value="firefox" />
+    <classes>
+      <class name="com.alada.login.Level_04_Login_Multiple_Browser"/>
+    </classes>
+  </test> 
+  
+  <test name="Run on CHROME">
+  <parameter name="browser" value="chrome" />
+    <classes>
+      <class name="com.alada.login.Level_04_Login_Multiple_Browser"/>
+    </classes>
+  </test> 
+  
+  <test name="Run on EDGE CHROMIUM">
+  <parameter name="browser" value="edge_chromium" />
+    <classes>
+      <class name="com.alada.login.Level_04_Login_Multiple_Browser"/>
+    </classes>
+  </test> 
+  
+</suite> 
