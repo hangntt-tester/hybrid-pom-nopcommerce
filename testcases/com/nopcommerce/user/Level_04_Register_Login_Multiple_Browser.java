@@ -3,18 +3,19 @@ package com.nopcommerce.user;
 import java.util.Random;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import commons.BaseTest;
 import pageObjects.user.nopCommerce.HomePageObject;
 import pageObjects.user.nopCommerce.LoginPageObject;
 import pageObjects.user.nopCommerce.MyAccountPageObject;
 import pageObjects.user.nopCommerce.RegisterPageObject;
 
-public class Level_03_Register_Login_Page_Object_Pattern {
+public class Level_04_Register_Login_Multiple_Browser extends BaseTest{
 	WebDriver driver;
 	HomePageObject homePage;
 	LoginPageObject loginPage;
@@ -24,13 +25,10 @@ public class Level_03_Register_Login_Page_Object_Pattern {
 	String projectPath = System.getProperty("user.dir");
 	String firstName, lastName, day, month, year, emailAddress, companyName, password;
 	
+	@Parameters({"browser", "url"})
 	@BeforeClass
-	public void beforeClass() {
-		System.setProperty("webdriver.gecko.driver", projectPath + "\\browserDrivers\\geckodriver.exe");
-		driver = new FirefoxDriver();
-		// 1 - Mở app url lên -> Navigate tới Home Page
-		driver.get("https://demo.nopcommerce.com/");
-		homePage = new HomePageObject(driver);
+	public void beforeClass(String browserName, String appUrl) {
+		driver = getBrowserDriver(browserName, appUrl);
 		
 		firstName = "Automation"; 
 		lastName= "FC"; 
@@ -44,6 +42,8 @@ public class Level_03_Register_Login_Page_Object_Pattern {
 	
 	@Test
 	public void TC_01_Register( ) {
+		homePage = new HomePageObject(driver);
+		
 		// 2 - Đang từ Home Page (Click vào Register link) -> Navigate tới Register Page
 		homePage.clickToRegisterLink();
 		registerPage = new RegisterPageObject(driver);

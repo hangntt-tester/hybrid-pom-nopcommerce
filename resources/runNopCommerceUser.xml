@@ -1,10 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="User NopCommerce" parallel="false">
-  <test name="Run on Firefox">
+  <parameter name="url" value="https://demo.nopcommerce.com/" />
+
+  <test name="Run on FIREFOX">
+  <parameter name="browser" value="firefox" />
     <classes>
-      <class name="com.nopcommerce.user.Level_02_Register_Login_BasePage_Part_I"/>
-      <class name="com.nopcommerce.user.Level_02_Register_Login_BasePage_Part_II"/>
-      <class name="com.nopcommerce.user.Level_02_Register_Login_BasePage_Part_III"/>
+      <class name="com.nopcommerce.user.Level_08_Register_Login_Page_Dynamic_Locator"/>
     </classes>
   </test> 
+  
+  <test name="Run on CHROME">
+  <parameter name="browser" value="chrome" />
+    <classes>
+      <class name="com.nopcommerce.user.Level_08_Register_Login_Page_Dynamic_Locator"/>
+    </classes>
+  </test> 
+  
+  <test name="Run on EDGE CHROMIUM">
+  <parameter name="browser" value="edge_chromium" />
+    <classes>
+      <class name="com.nopcommerce.user.Level_08_Register_Login_Page_Dynamic_Locator"/>
+    </classes>
+  </test> 
+  
 </suite> 

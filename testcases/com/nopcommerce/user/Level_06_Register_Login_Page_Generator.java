@@ -3,18 +3,20 @@ package com.nopcommerce.user;
 import java.util.Random;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import commons.BaseTest;
 import pageObjects.user.nopCommerce.HomePageObject;
 import pageObjects.user.nopCommerce.LoginPageObject;
 import pageObjects.user.nopCommerce.MyAccountPageObject;
+import pageObjects.user.nopCommerce.PageGeneratorManager;
 import pageObjects.user.nopCommerce.RegisterPageObject;
 
-public class Level_03_Register_Login_Page_Object_Pattern {
+public class Level_06_Register_Login_Page_Generator extends BaseTest{
 	WebDriver driver;
 	HomePageObject homePage;
 	LoginPageObject loginPage;
@@ -24,13 +26,12 @@ public class Level_03_Register_Login_Page_Object_Pattern {
 	String projectPath = System.getProperty("user.dir");
 	String firstName, lastName, day, month, year, emailAddress, companyName, password;
 	
+	@Parameters({"browser", "url"})
 	@BeforeClass
-	public void beforeClass() {
-		System.setProperty("webdriver.gecko.driver", projectPath + "\\browserDrivers\\geckodriver.exe");
-		driver = new FirefoxDriver();
-		// 1 - Mở app url lên -> Navigate tới Home Page
-		driver.get("https://demo.nopcommerce.com/");
-		homePage = new HomePageObject(driver);
+	public void beforeClass(String browserName, String appUrl) {
+		driver = getBrowserDriver(browserName, appUrl);
+		
+		homePage = PageGeneratorManager.getHomePage(driver);
 		
 		firstName = "Automation"; 
 		lastName= "FC"; 
@@ -45,8 +46,7 @@ public class Level_03_Register_Login_Page_Object_Pattern {
 	@Test
 	public void TC_01_Register( ) {
 		// 2 - Đang từ Home Page (Click vào Register link) -> Navigate tới Register Page
-		homePage.clickToRegisterLink();
-		registerPage = new RegisterPageObject(driver);
+		registerPage = homePage.clickToRegisterLink();
 		
 		registerPage.clickToGenderMaleRadio();
 		registerPage.enterToFirstNameTextbox(firstName);
@@ -63,29 +63,25 @@ public class Level_03_Register_Login_Page_Object_Pattern {
 		Assert.assertTrue(registerPage.isRegisterSuccessMessageDisplayed());
 		
 		// 3 - Đang từ Register (Click vào Logout Link) -> Navigate tới Home Page
-		registerPage.clickToLogoutLink();
-		homePage = new HomePageObject(driver);
+		homePage = registerPage.clickToLogoutLink();
 		}
 	
 	@Test
 	public void TC_02_Login( ) {
 		// 4 - Đang từ Home Page (Click vào Login Link) -> Navigate tới Login Page
-		homePage.clickToLoginLink();
-		loginPage = new LoginPageObject(driver);
+		loginPage = homePage.clickToLoginLink();
 		
 		loginPage.enterToEmailTextbox(emailAddress);
 		loginPage.enterToPasswordTextbox(password);
 		
 		// 5 - Đang từ Login Page (Click vào Login Button) -> Navigate tới Home Page
-		loginPage.clickToLoginButton();
-		homePage = new HomePageObject(driver);
+		homePage = loginPage.clickToLoginButton();
 	}
 	
 	@Test
 	public void TC_03_My_Account( ) {
 		// 6 - Đang từ Home Page (Click vào MyAccount Link) -> Navigate tới MyAccount Page
-		homePage.clickToMyAccountLink();
-		myAccountPage = new MyAccountPageObject(driver);
+		myAccountPage = homePage.clickToMyAccountLink();
 		
 		Assert.assertTrue(myAccountPage.isGenderMaleRadioSelected());
 		Assert.assertEquals(myAccountPage.getFirstNameTextboxValue(), firstName);

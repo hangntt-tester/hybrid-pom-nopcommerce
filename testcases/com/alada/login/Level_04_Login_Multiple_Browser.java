@@ -21,10 +21,7 @@ public class Level_04_Login_Multiple_Browser extends BaseTest {
 	@Parameters({"browser", "url"})
 	@BeforeClass
 	public void beforeClass(String browserName, String appUrl) {
-		
 		driver = getBrowserDriver(browserName, appUrl);
-
-		driver.manage().window().maximize();
 		loginPage = new LoginPageObject(driver);
 	}
 	

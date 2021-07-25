@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="15" passed="15">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Alada" duration-ms="47198" started-at="2021-07-04T15:41:24Z" finished-at="2021-07-04T15:42:12Z">
+  <suite name="Admin NopCommerce" duration-ms="9243" started-at="2021-07-25T01:09:58Z" finished-at="2021-07-25T01:10:08Z">
     <groups>
     </groups>
-    <test name="Run on FIREFOX" duration-ms="18068" started-at="2021-07-04T15:41:24Z" finished-at="2021-07-04T15:41:42Z">
-      <class name="com.alada.login.Level_04_Login_Multiple_Browser">
-        <test-method status="PASS" signature="beforeClass(java.lang.String, java.lang.String)[pri:0, instance:com.alada.login.Level_04_Login_Multiple_Browser@36d4b5c]" name="beforeClass" is-config="true" duration-ms="6517" started-at="2021-07-04T15:41:24Z" finished-at="2021-07-04T15:41:31Z">
+    <test name="Run on FIREFOX" duration-ms="9243" started-at="2021-07-25T01:09:58Z" finished-at="2021-07-25T01:10:08Z">
+      <class name="com.nopcommerce.admin.Level_10_Admin_Upload_File">
+        <test-method status="PASS" signature="beforeClass(java.lang.String, java.lang.String)[pri:0, instance:com.nopcommerce.admin.Level_10_Admin_Upload_File@36d4b5c]" name="beforeClass" is-config="true" duration-ms="8430" started-at="2021-07-25T01:09:58Z" finished-at="2021-07-25T01:10:07Z">
           <params>
             <param index="0">
               <value>
@@ -16,126 +16,22 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[https://alada.vn/tai-khoan/dang-nhap.html]]>
+                <![CDATA[https://admin-demo.nopcommerce.com/login?ReturnUrl=admin]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="TC_01_Login_With_Empty_Email_Password()[pri:0, instance:com.alada.login.Level_04_Login_Multiple_Browser@36d4b5c]" name="TC_01_Login_With_Empty_Email_Password" duration-ms="768" started-at="2021-07-04T15:41:31Z" finished-at="2021-07-04T15:41:32Z">
+        <test-method status="PASS" signature="Admin_01_Upload_File()[pri:0, instance:com.nopcommerce.admin.Level_10_Admin_Upload_File@36d4b5c]" name="Admin_01_Upload_File" duration-ms="9" started-at="2021-07-25T01:10:07Z" finished-at="2021-07-25T01:10:07Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_01_Login_With_Empty_Email_Password -->
-        <test-method status="PASS" signature="TC_02_Login_With_Invalid_Email()[pri:0, instance:com.alada.login.Level_04_Login_Multiple_Browser@36d4b5c]" name="TC_02_Login_With_Invalid_Email" duration-ms="1165" started-at="2021-07-04T15:41:32Z" finished-at="2021-07-04T15:41:33Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_02_Login_With_Invalid_Email -->
-        <test-method status="PASS" signature="TC_03_Login_With_Email_Not_Registered()[pri:0, instance:com.alada.login.Level_04_Login_Multiple_Browser@36d4b5c]" name="TC_03_Login_With_Email_Not_Registered" duration-ms="1711" started-at="2021-07-04T15:41:33Z" finished-at="2021-07-04T15:41:35Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_03_Login_With_Email_Not_Registered -->
-        <test-method status="PASS" signature="TC_04_Login_With_Invalid_Password()[pri:0, instance:com.alada.login.Level_04_Login_Multiple_Browser@36d4b5c]" name="TC_04_Login_With_Invalid_Password" duration-ms="3129" started-at="2021-07-04T15:41:35Z" finished-at="2021-07-04T15:41:38Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_04_Login_With_Invalid_Password -->
-        <test-method status="PASS" signature="TC_05_Login_With_Valid_Email_Password()[pri:0, instance:com.alada.login.Level_04_Login_Multiple_Browser@36d4b5c]" name="TC_05_Login_With_Valid_Email_Password" duration-ms="4086" started-at="2021-07-04T15:41:38Z" finished-at="2021-07-04T15:41:42Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_05_Login_With_Valid_Email_Password -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.alada.login.Level_04_Login_Multiple_Browser@36d4b5c]" name="afterClass" is-config="true" duration-ms="677" started-at="2021-07-04T15:41:42Z" finished-at="2021-07-04T15:41:42Z">
+        </test-method> <!-- Admin_01_Upload_File -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.nopcommerce.admin.Level_10_Admin_Upload_File@36d4b5c]" name="afterClass" is-config="true" duration-ms="771" started-at="2021-07-25T01:10:07Z" finished-at="2021-07-25T01:10:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.alada.login.Level_04_Login_Multiple_Browser -->
+      </class> <!-- com.nopcommerce.admin.Level_10_Admin_Upload_File -->
     </test> <!-- Run on FIREFOX -->
-    <test name="Run on CHROME" duration-ms="15257" started-at="2021-07-04T15:41:42Z" finished-at="2021-07-04T15:41:58Z">
-      <class name="com.alada.login.Level_04_Login_Multiple_Browser">
-        <test-method status="PASS" signature="beforeClass(java.lang.String, java.lang.String)[pri:0, instance:com.alada.login.Level_04_Login_Multiple_Browser@18be83e4]" name="beforeClass" is-config="true" duration-ms="4634" started-at="2021-07-04T15:41:42Z" finished-at="2021-07-04T15:41:47Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[https://alada.vn/tai-khoan/dang-nhap.html]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="TC_01_Login_With_Empty_Email_Password()[pri:0, instance:com.alada.login.Level_04_Login_Multiple_Browser@18be83e4]" name="TC_01_Login_With_Empty_Email_Password" duration-ms="526" started-at="2021-07-04T15:41:47Z" finished-at="2021-07-04T15:41:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_01_Login_With_Empty_Email_Password -->
-        <test-method status="PASS" signature="TC_02_Login_With_Invalid_Email()[pri:0, instance:com.alada.login.Level_04_Login_Multiple_Browser@18be83e4]" name="TC_02_Login_With_Invalid_Email" duration-ms="869" started-at="2021-07-04T15:41:48Z" finished-at="2021-07-04T15:41:48Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_02_Login_With_Invalid_Email -->
-        <test-method status="PASS" signature="TC_03_Login_With_Email_Not_Registered()[pri:0, instance:com.alada.login.Level_04_Login_Multiple_Browser@18be83e4]" name="TC_03_Login_With_Email_Not_Registered" duration-ms="1965" started-at="2021-07-04T15:41:48Z" finished-at="2021-07-04T15:41:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_03_Login_With_Email_Not_Registered -->
-        <test-method status="PASS" signature="TC_04_Login_With_Invalid_Password()[pri:0, instance:com.alada.login.Level_04_Login_Multiple_Browser@18be83e4]" name="TC_04_Login_With_Invalid_Password" duration-ms="3664" started-at="2021-07-04T15:41:50Z" finished-at="2021-07-04T15:41:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_04_Login_With_Invalid_Password -->
-        <test-method status="PASS" signature="TC_05_Login_With_Valid_Email_Password()[pri:0, instance:com.alada.login.Level_04_Login_Multiple_Browser@18be83e4]" name="TC_05_Login_With_Valid_Email_Password" duration-ms="2885" started-at="2021-07-04T15:41:54Z" finished-at="2021-07-04T15:41:57Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_05_Login_With_Valid_Email_Password -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.alada.login.Level_04_Login_Multiple_Browser@18be83e4]" name="afterClass" is-config="true" duration-ms="709" started-at="2021-07-04T15:41:57Z" finished-at="2021-07-04T15:41:58Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.alada.login.Level_04_Login_Multiple_Browser -->
-    </test> <!-- Run on CHROME -->
-    <test name="Run on EDGE CHROMIUM" duration-ms="13854" started-at="2021-07-04T15:41:58Z" finished-at="2021-07-04T15:42:12Z">
-      <class name="com.alada.login.Level_04_Login_Multiple_Browser">
-        <test-method status="PASS" signature="beforeClass(java.lang.String, java.lang.String)[pri:0, instance:com.alada.login.Level_04_Login_Multiple_Browser@4c70fda8]" name="beforeClass" is-config="true" duration-ms="3039" started-at="2021-07-04T15:41:58Z" finished-at="2021-07-04T15:42:01Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[edge_chromium]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[https://alada.vn/tai-khoan/dang-nhap.html]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="TC_01_Login_With_Empty_Email_Password()[pri:0, instance:com.alada.login.Level_04_Login_Multiple_Browser@4c70fda8]" name="TC_01_Login_With_Empty_Email_Password" duration-ms="509" started-at="2021-07-04T15:42:01Z" finished-at="2021-07-04T15:42:01Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_01_Login_With_Empty_Email_Password -->
-        <test-method status="PASS" signature="TC_02_Login_With_Invalid_Email()[pri:0, instance:com.alada.login.Level_04_Login_Multiple_Browser@4c70fda8]" name="TC_02_Login_With_Invalid_Email" duration-ms="931" started-at="2021-07-04T15:42:01Z" finished-at="2021-07-04T15:42:02Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_02_Login_With_Invalid_Email -->
-        <test-method status="PASS" signature="TC_03_Login_With_Email_Not_Registered()[pri:0, instance:com.alada.login.Level_04_Login_Multiple_Browser@4c70fda8]" name="TC_03_Login_With_Email_Not_Registered" duration-ms="1962" started-at="2021-07-04T15:42:02Z" finished-at="2021-07-04T15:42:04Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_03_Login_With_Email_Not_Registered -->
-        <test-method status="PASS" signature="TC_04_Login_With_Invalid_Password()[pri:0, instance:com.alada.login.Level_04_Login_Multiple_Browser@4c70fda8]" name="TC_04_Login_With_Invalid_Password" duration-ms="3852" started-at="2021-07-04T15:42:04Z" finished-at="2021-07-04T15:42:08Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_04_Login_With_Invalid_Password -->
-        <test-method status="PASS" signature="TC_05_Login_With_Valid_Email_Password()[pri:0, instance:com.alada.login.Level_04_Login_Multiple_Browser@4c70fda8]" name="TC_05_Login_With_Valid_Email_Password" duration-ms="2856" started-at="2021-07-04T15:42:08Z" finished-at="2021-07-04T15:42:11Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_05_Login_With_Valid_Email_Password -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.alada.login.Level_04_Login_Multiple_Browser@4c70fda8]" name="afterClass" is-config="true" duration-ms="700" started-at="2021-07-04T15:42:11Z" finished-at="2021-07-04T15:42:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.alada.login.Level_04_Login_Multiple_Browser -->
-    </test> <!-- Run on EDGE CHROMIUM -->
-  </suite> <!-- Alada -->
+  </suite> <!-- Admin NopCommerce -->
 </testng-results>
