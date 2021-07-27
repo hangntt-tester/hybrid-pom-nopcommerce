@@ -2,36 +2,36 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Admin NopCommerce" duration-ms="9243" started-at="2021-07-25T01:09:58Z" finished-at="2021-07-25T01:10:08Z">
+  <suite name="Admin NopCommerce" duration-ms="40733" started-at="2021-07-26T14:54:11Z" finished-at="2021-07-26T14:54:51Z">
     <groups>
     </groups>
-    <test name="Run on FIREFOX" duration-ms="9243" started-at="2021-07-25T01:09:58Z" finished-at="2021-07-25T01:10:08Z">
+    <test name="Run on CHROME" duration-ms="40733" started-at="2021-07-26T14:54:11Z" finished-at="2021-07-26T14:54:51Z">
       <class name="com.nopcommerce.admin.Level_10_Admin_Upload_File">
-        <test-method status="PASS" signature="beforeClass(java.lang.String, java.lang.String)[pri:0, instance:com.nopcommerce.admin.Level_10_Admin_Upload_File@36d4b5c]" name="beforeClass" is-config="true" duration-ms="8430" started-at="2021-07-25T01:09:58Z" finished-at="2021-07-25T01:10:07Z">
+        <test-method status="PASS" signature="beforeClass(java.lang.String, java.lang.String)[pri:0, instance:com.nopcommerce.admin.Level_10_Admin_Upload_File@36d4b5c]" name="beforeClass" is-config="true" duration-ms="20599" started-at="2021-07-26T14:54:11Z" finished-at="2021-07-26T14:54:31Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[firefox]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[https://admin-demo.nopcommerce.com/login?ReturnUrl=admin]]>
+                <![CDATA[https://admin-demo.nopcommerce.com/login?ReturnUrl=/admin/]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method status="PASS" signature="Admin_01_Upload_File()[pri:0, instance:com.nopcommerce.admin.Level_10_Admin_Upload_File@36d4b5c]" name="Admin_01_Upload_File" duration-ms="9" started-at="2021-07-25T01:10:07Z" finished-at="2021-07-25T01:10:07Z">
+        <test-method status="PASS" signature="Admin_01_Upload_File()[pri:0, instance:com.nopcommerce.admin.Level_10_Admin_Upload_File@36d4b5c]" name="Admin_01_Upload_File" duration-ms="19297" started-at="2021-07-26T14:54:31Z" finished-at="2021-07-26T14:54:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Admin_01_Upload_File -->
-        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.nopcommerce.admin.Level_10_Admin_Upload_File@36d4b5c]" name="afterClass" is-config="true" duration-ms="771" started-at="2021-07-25T01:10:07Z" finished-at="2021-07-25T01:10:08Z">
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.nopcommerce.admin.Level_10_Admin_Upload_File@36d4b5c]" name="afterClass" is-config="true" duration-ms="815" started-at="2021-07-26T14:54:50Z" finished-at="2021-07-26T14:54:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
       </class> <!-- com.nopcommerce.admin.Level_10_Admin_Upload_File -->
-    </test> <!-- Run on FIREFOX -->
+    </test> <!-- Run on CHROME -->
   </suite> <!-- Admin NopCommerce -->
 </testng-results>

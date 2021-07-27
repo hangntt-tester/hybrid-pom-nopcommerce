@@ -142,13 +142,13 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Admin NopCommerce&quot;&gt;
-  &lt;parameter name=&quot;url&quot; value=&quot;https://admin-demo.nopcommerce.com/login?ReturnUrl=admin&quot;/&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Run on FIREFOX&quot;&gt;
-    &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
+  &lt;parameter name=&quot;url&quot; value=&quot;https://admin-demo.nopcommerce.com/login?ReturnUrl=/admin/&quot;/&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Run on CHROME&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.nopcommerce.admin.Level_10_Admin_Upload_File&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Run on FIREFOX --&gt;
+  &lt;/test&gt; &lt;!-- Run on CHROME --&gt;
 &lt;/suite&gt; &lt;!-- Admin NopCommerce --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -160,7 +160,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Run on FIREFOX (1 class)</span>
+                <span class="test-name">Run on CHROME (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -190,12 +190,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'Admin_01_Upload_File')
 data.setCell(0, 2, 'com.nopcommerce.admin.Level_10_Admin_Upload_File')
-data.setCell(0, 3, 9);
+data.setCell(0, 3, 19297);
 window.suiteTableData['Admin_NopCommerce']= { tableData: data, tableDiv: 'times-div-Admin_NopCommerce'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 9 ms</span>
+              <span class="suite-total-time">Total running time: 19 seconds</span>
               <div id="times-div-Admin_NopCommerce">
               </div> <!-- times-div-Admin_NopCommerce -->
             </div> <!-- times-div -->
@@ -223,16 +223,16 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.nopcommerce.admin.Level_10_Admin_Upload_File</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">beforeClass(firefox, https://admin-demo.nopcommerce.com/login?ReturnUrl=admin)</span>
+                <span class="method-name">beforeClass(chrome, https://admin-demo.nopcommerce.com/login?ReturnUrl=/admin/)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">Admin_01_Upload_File</span>
-                <span class="method-start">8439 ms</span>
+                <span class="method-start">20607 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">afterClass</span>
-                <span class="method-start">8451 ms</span>
+                <span class="method-start">39907 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

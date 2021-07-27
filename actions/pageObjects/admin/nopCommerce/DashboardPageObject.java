@@ -11,9 +11,4 @@ public class DashboardPageObject extends BasePage {
 		this.driver = driver;
 	}
 
-	public ProductSearchPageObject openSubMenuPageByName(String menuPageName, String submenuPageName) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
 }

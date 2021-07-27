@@ -16,6 +16,12 @@ import pageObjects.admin.nopCommerce.ProductSearchPageObject;
 
 public class Level_10_Admin_Upload_File extends BaseTest{
 	WebDriver driver;
+	String productName ="Adobe Photoshop CS4";
+	String productAvatarImg = "Avatar.jpg";
+	String productAvatarAlt = "Avatar Alt";
+	String productAvatarTitle = "Avatar Title";
+	String productAvatarOrder = "1";
+	
 	LoginPageObject loginPage;
 	DashboardPageObject dashboardPage;
 	ProductSearchPageObject productSearchPage;
@@ -31,56 +37,57 @@ public class Level_10_Admin_Upload_File extends BaseTest{
 		loginPage.enterToPasswordTextbox("admin");
 		dashboardPage = loginPage.clickToLoginButton();
 		
-		productSearchPage = dashboardPage.openSubMenuPageByName("Catalog", "Products");
+		dashboardPage.openSubMenuPageByName(driver, "Catalog", "Products");
+		productSearchPage = PageGeneratorManager.getProductSearchPage(driver);
 		
-		productSearchPage.enterToProductNameTextbox("Adobe Photoshop CS4");
+		productSearchPage.enterToProductNameTextbox(productName);
 		
 		productSearchPage.clickToSearchButton();
 		
-		productDetailPage = productSearchPage.clickToEditButtonByProductName("Adobe Photoshop CS4");
+		productDetailPage = productSearchPage.clickToEditButtonByProductName(productName);
 	}
 	
 	@Test
 	public void Admin_01_Upload_File() {
-		productDetailPage.clickToExpanPanalByName("Pictures");
+		productDetailPage.clickToExpandPanelByName("Pictures");
 		
-		productDetailPage.uploadPictureByFileName("");
+		productDetailPage.uploadFileAtCardName(driver, "pictures", productAvatarImg);
 		
-		Assert.assertTrue(productDetailPage.isPictureUploadedSuccessByFileName());
+		Assert.assertTrue(productDetailPage.isPictureUploadedSuccessByFileName(productAvatarImg));
 		
-		productDetailPage.enterToAltTextbox("");
-		productDetailPage.enterToTitleTextbox("");
-		productDetailPage.enterToDisplayedOrderTextbox("");
+		productDetailPage.enterToAltTextbox(productAvatarAlt);
+		productDetailPage.enterToTitleTextbox(productAvatarTitle);
+		productDetailPage.clickToUpDownInDisplayedOrderTexbox("Increase");
 		
 		productDetailPage.clickToAddProductPictureButton();
 		
-		Assert.assertTrue(productDetailPage.isPictureImageDisplayed("", "", "", ""));
+		Assert.assertTrue(productDetailPage.isPictureImageDisplayed(productName, productAvatarOrder, productAvatarAlt, productAvatarTitle));
 		
 		productSearchPage = productDetailPage.clickToSaveButton();
 		
-		Assert.assertTrue(productSearchPage.isSuccesMessageDisplayed("The product has been updated successfully."));
+		Assert.assertTrue(productSearchPage.isSuccessMessageDisplayed("The product has been updated successfully."));
 		
-		productSearchPage.enterToProductNameTextbox("Adobe Photoshop CS4");
+		productSearchPage.enterToProductNameTextbox(productName);
 		
 		productSearchPage.clickToSearchButton();
 		
-		Assert.assertTrue(productSearchPage.isPictureImageUpdated("adobe-photoshop-cs4", "Adobe Photoshop CS4"));
+		Assert.assertTrue(productSearchPage.isPictureImageUpdated(productName, productName));
 		
-		productDetailPage = productSearchPage.clickToEditButtonByProductName("Adobe Photoshop CS4");
+		productDetailPage = productSearchPage.clickToEditButtonByProductName(productName);
 		
-		productDetailPage.clickToExpanPanalByName("Pictures"); 
+		productDetailPage.clickToExpandPanelByName("Pictures"); 
 		
-		productDetailPage.clickToDeleteButtonAtPictureName(); // Accept Alert
+		productDetailPage.clickToDeleteButtonAtPictureName(productAvatarTitle); // Accept Alert
 		
-		Assert.assertTrue(productDetailPage.isMessageDisplayedInTable("No data available in table"));
+		Assert.assertTrue(productDetailPage.isMessageDisplayedInEmptyTable(driver, "productpictures"));
 		
 		productSearchPage = productDetailPage.clickToSaveButton();
 		
-		productSearchPage.enterToProductNameTextbox("Adobe Photoshop CS4");
+		productSearchPage.enterToProductNameTextbox(productName);
 		
 		productSearchPage.clickToSearchButton();
 		
-		Assert.assertTrue(productSearchPage.isPictureImageUpdated("default-image", "Adobe Photoshop CS4"));
+		Assert.assertTrue(productSearchPage.isPictureImageUpdated("default-image", productName));
 	}
 	
 	
