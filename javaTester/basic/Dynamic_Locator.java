@@ -3,10 +3,6 @@ package basic;
 public class Dynamic_Locator {
 	public static void main(String[] args) {
 		// UI
-		String SEARCH_PAGE_FOOTER = "//div[@class='footer']//a[text()='Search']";
-		String ORDERS_PAGE_FOOTER = "//div[@class='footer']//a[text()='Orders']";
-		String BLOG_PAGE_FOOTER = "//div[@class='footer']//a[text()='Blog']";
-		
 		String DYNAMIC_PAGE_FOOTER = "//div[@class='footer']//a[text()='%s']";
 		
 		String DYNAMIC_SIDEBAR_TEXT = "//sidebar[@id='%s']//div[text()='%s']";

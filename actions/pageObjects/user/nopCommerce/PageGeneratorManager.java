@@ -2,9 +2,6 @@ package pageObjects.user.nopCommerce;
 
 import org.openqa.selenium.WebDriver;
 
-import com.nopcommerce.data.User.Login;
-import com.nopcommerce.data.User.Order;
-
 public class PageGeneratorManager {
 	private static HomePageObject homePage;
 	private static LoginPageObject loginPage;
