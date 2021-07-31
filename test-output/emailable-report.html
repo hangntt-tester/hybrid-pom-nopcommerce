@@ -8,11 +8,29 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="7">Admin NopCommerce</th></tr>
-<tr><td><a href="#t0">Run on CHROME</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">40,733</td><td></td><td></td></tr>
+<tr><th colspan="7">Facebook</th></tr>
+<tr><td><a href="#t0">Run on CHROME</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">16,305</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Admin NopCommerce</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Run on CHROME &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.nopcommerce.admin.Level_10_Admin_Upload_File</td><td><a href="#m0">Admin_01_Upload_File</a></td><td rowspan="1">1627311271628</td><td rowspan="1">19297</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Facebook</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Run on CHROME &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.facebook.register.Level_12_Register_Login_Assert_Verify</td><td><a href="#m0">TC_01_Verify</a></td><td rowspan="1">1627724325954</td><td rowspan="1">11543</td></tr></tbody>
 </table>
-<h2>Run on CHROME</h2><h3 id="m0">com.nopcommerce.admin.Level_10_Admin_Upload_File#Admin_01_Upload_File</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Run on CHROME</h2><h3 id="m0">com.facebook.register.Level_12_Register_Login_Assert_Verify#TC_01_Verify</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Multiple failures (3):
+Failure 1 of 3
+java.lang.AssertionError: expected [false] but found [true]
+	at commons.BaseTest.checkFailed(BaseTest.java:105)
+	at commons.BaseTest.verifyFalse(BaseTest.java:115)
+	at com.facebook.register.Level_12_Register_Login_Assert_Verify.TC_01_Verify(Level_12_Register_Login_Assert_Verify.java:30)
+
+Failure 2 of 3
+java.lang.AssertionError: expected [false] but found [true]
+	at commons.BaseTest.checkFailed(BaseTest.java:105)
+	at commons.BaseTest.verifyFalse(BaseTest.java:115)
+	at com.facebook.register.Level_12_Register_Login_Assert_Verify.TC_01_Verify(Level_12_Register_Login_Assert_Verify.java:36)
+
+Failure 3 of 3
+java.lang.AssertionError: expected [false] but found [true]
+	at commons.BaseTest.checkFailed(BaseTest.java:105)
+	at commons.BaseTest.verifyFalse(BaseTest.java:115)
+	at com.facebook.register.Level_12_Register_Login_Assert_Verify.TC_01_Verify(Level_12_Register_Login_Assert_Verify.java:44)
+... Removed 87 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
