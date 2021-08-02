@@ -24,13 +24,13 @@ public class BaseTest {
 		CHROME, FIREFOX, IE, SAFARI, EDGE_LEGACY, EDGE_CHROMIUM, H_CHROME, H_FIREFOX;
 	}
 	
-	private enum OS {
-		WINDOWS, MAC_OSX, LINUX;
-	}
-	
-	private enum PLATFORM {
-		ANDROID, IOS, WINDOW_PHONE;
-	}
+//	private enum OS {
+//		WINDOWS, MAC_OSX, LINUX;
+//	}
+//	
+//	private enum PLATFORM {
+//		ANDROID, IOS, WINDOW_PHONE;
+//	}
 	
 	public WebDriver getBrowserDriver(String browserName) {
 		BROWSER browser = BROWSER.valueOf(browserName.toUpperCase());

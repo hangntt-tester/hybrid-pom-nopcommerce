@@ -8,29 +8,31 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="7">Facebook</th></tr>
-<tr><td><a href="#t0">Run on CHROME</a></td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">16,305</td><td></td><td></td></tr>
+<tr><th colspan="7">User NopCommerce</th></tr>
+<tr><td><a href="#t0">Run on CHROME</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">30,812</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Facebook</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Run on CHROME &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.facebook.register.Level_12_Register_Login_Assert_Verify</td><td><a href="#m0">TC_01_Verify</a></td><td rowspan="1">1627724325954</td><td rowspan="1">11543</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">User NopCommerce</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Run on CHROME &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">com.nopcommerce.user.Level_13_Register_Login_Log_Report</td><td><a href="#m0">User_01_Register</a></td><td rowspan="1">1627914272553</td><td rowspan="1">13830</td></tr><tr class="passedeven"><td><a href="#m1">User_02_Login</a></td><td rowspan="1">1627914286387</td><td rowspan="1">10446</td></tr></tbody>
 </table>
-<h2>Run on CHROME</h2><h3 id="m0">com.facebook.register.Level_12_Register_Login_Assert_Verify#TC_01_Verify</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Multiple failures (3):
-Failure 1 of 3
-java.lang.AssertionError: expected [false] but found [true]
-	at commons.BaseTest.checkFailed(BaseTest.java:105)
-	at commons.BaseTest.verifyFalse(BaseTest.java:115)
-	at com.facebook.register.Level_12_Register_Login_Assert_Verify.TC_01_Verify(Level_12_Register_Login_Assert_Verify.java:30)
-
-Failure 2 of 3
-java.lang.AssertionError: expected [false] but found [true]
-	at commons.BaseTest.checkFailed(BaseTest.java:105)
-	at commons.BaseTest.verifyFalse(BaseTest.java:115)
-	at com.facebook.register.Level_12_Register_Login_Assert_Verify.TC_01_Verify(Level_12_Register_Login_Assert_Verify.java:36)
-
-Failure 3 of 3
-java.lang.AssertionError: expected [false] but found [true]
-	at commons.BaseTest.checkFailed(BaseTest.java:105)
-	at commons.BaseTest.verifyFalse(BaseTest.java:115)
-	at com.facebook.register.Level_12_Register_Login_Assert_Verify.TC_01_Verify(Level_12_Register_Login_Assert_Verify.java:44)
-... Removed 87 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Run on CHROME</h2><h3 id="m0">com.nopcommerce.user.Level_13_Register_Login_Log_Report#User_01_Register</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">[INFO ] [2021-08-02 21:24:32,560] User_01_Register - Step 01: Click to Register link
+<br/>[INFO ] [2021-08-02 21:24:37,287] User_01_Register - Step 02: Click to Male radio button
+<br/>[INFO ] [2021-08-02 21:24:37,506] User_01_Register - Step 03: Enter to Firstname textbox
+<br/>[INFO ] [2021-08-02 21:24:37,759] User_01_Register - Step 04: Enter to Lastname textbox
+<br/>[INFO ] [2021-08-02 21:24:37,959] User_01_Register - Step 05: Select Day dropdown
+<br/>[INFO ] [2021-08-02 21:24:38,155] User_01_Register - Step 06: Select Month dropdown
+<br/>[INFO ] [2021-08-02 21:24:38,358] User_01_Register - Step07: Select Year dropdown
+<br/>[INFO ] [2021-08-02 21:24:38,535] User_01_Register - Step 08: Enter to Email textbox with value: automationfc4724@mailinator.com
+<br/>[INFO ] [2021-08-02 21:24:38,798] User_01_Register - Step 09: Enter to Company textbox with value: Automation FC
+<br/>[INFO ] [2021-08-02 21:24:38,991] User_01_Register - Step 10: Enter to Password textbox with value: 123456
+<br/>[INFO ] [2021-08-02 21:24:39,172] User_01_Register - Step 11: Enter to Confirm Password textbox with value: 123456
+<br/>[INFO ] [2021-08-02 21:24:39,372] User_01_Register - Step 12: Click to Register button
+<br/>[INFO ] [2021-08-02 21:24:41,574] User_01_Register - Step 13: Verify success Message is displayed
+<br/>[INFO ] [2021-08-02 21:24:41,695]  -------------------------- PASSED -------------------------- 
+<br/>[INFO ] [2021-08-02 21:24:41,698] User_01_Register - Step 14: Click to Logout link
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.nopcommerce.user.Level_13_Register_Login_Log_Report#User_02_Login</h3><table class="result"><tr><th>Messages</th></tr><tr><td><div class="messages">[INFO ] [2021-08-02 21:24:46,388] User_02_Login - Step 01: Click to Login link
+<br/>[INFO ] [2021-08-02 21:24:50,747] User_02_Login - Step 02: Enter to Email textbox with value: automationfc4724@mailinator.com
+<br/>[INFO ] [2021-08-02 21:24:51,012] User_02_Login - Step 03: Enter to Password textbox with value: 123456
+<br/>[INFO ] [2021-08-02 21:24:51,239] User_02_Login - Step 04: Click to Login button
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

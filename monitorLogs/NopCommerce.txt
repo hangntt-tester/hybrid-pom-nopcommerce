@@ -1,0 +1,21 @@
+[INFO ] [2021-08-02 21:24:26,768] Pre-condition: Open browser 'chrome' and navigate to 'https://demo.nopcommerce.com/'
+[INFO ] [2021-08-02 21:24:32,560] User_01_Register - Step 01: Click to Register link
+[INFO ] [2021-08-02 21:24:37,287] User_01_Register - Step 02: Click to Male radio button
+[INFO ] [2021-08-02 21:24:37,506] User_01_Register - Step 03: Enter to Firstname textbox
+[INFO ] [2021-08-02 21:24:37,759] User_01_Register - Step 04: Enter to Lastname textbox
+[INFO ] [2021-08-02 21:24:37,959] User_01_Register - Step 05: Select Day dropdown
+[INFO ] [2021-08-02 21:24:38,155] User_01_Register - Step 06: Select Month dropdown
+[INFO ] [2021-08-02 21:24:38,358] User_01_Register - Step07: Select Year dropdown
+[INFO ] [2021-08-02 21:24:38,535] User_01_Register - Step 08: Enter to Email textbox with value: automationfc4724@mailinator.com
+[INFO ] [2021-08-02 21:24:38,798] User_01_Register - Step 09: Enter to Company textbox with value: Automation FC
+[INFO ] [2021-08-02 21:24:38,991] User_01_Register - Step 10: Enter to Password textbox with value: 123456
+[INFO ] [2021-08-02 21:24:39,172] User_01_Register - Step 11: Enter to Confirm Password textbox with value: 123456
+[INFO ] [2021-08-02 21:24:39,372] User_01_Register - Step 12: Click to Register button
+[INFO ] [2021-08-02 21:24:41,574] User_01_Register - Step 13: Verify success Message is displayed
+[INFO ] [2021-08-02 21:24:41,695]  -------------------------- PASSED -------------------------- 
+[INFO ] [2021-08-02 21:24:41,698] User_01_Register - Step 14: Click to Logout link
+[INFO ] [2021-08-02 21:24:46,388] User_02_Login - Step 01: Click to Login link
+[INFO ] [2021-08-02 21:24:50,747] User_02_Login - Step 02: Enter to Email textbox with value: automationfc4724@mailinator.com
+[INFO ] [2021-08-02 21:24:51,012] User_02_Login - Step 03: Enter to Password textbox with value: 123456
+[INFO ] [2021-08-02 21:24:51,239] User_02_Login - Step 04: Click to Login button
+[INFO ] [2021-08-02 21:24:56,835] Post-Condition: Close browser

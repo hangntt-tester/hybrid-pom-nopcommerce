@@ -1,25 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="User NopCommerce" parallel="false">
-  <parameter name="url" value="https://demo.nopcommerce.com/" />
+	<parameter name="url" value="https://demo.nopcommerce.com/" />
+	
+	<listeners>
+        <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+        <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+        <listener class-name="commons.MethodListener" />
+        <listener class-name="reportConfig.ExtentReportListenerV2" />
+	</listeners>
 
-  <test name="Run on FIREFOX">
-  <parameter name="browser" value="firefox" />
-    <classes>
-      <class name="com.nopcommerce.user.Level_08_Register_Login_Page_Dynamic_Locator"/>
-    </classes>
-  </test> 
-  
   <test name="Run on CHROME">
   <parameter name="browser" value="chrome" />
     <classes>
-      <class name="com.nopcommerce.user.Level_08_Register_Login_Page_Dynamic_Locator"/>
-    </classes>
-  </test> 
-  
-  <test name="Run on EDGE CHROMIUM">
-  <parameter name="browser" value="edge_chromium" />
-    <classes>
-      <class name="com.nopcommerce.user.Level_08_Register_Login_Page_Dynamic_Locator"/>
+      <class name="com.nopcommerce.user.Level_13_Register_Login_Log_Report"/>
     </classes>
   </test> 
   

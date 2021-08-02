@@ -8,8 +8,8 @@ import pageUIs.user.nopCommerce.LoginPageUI;
 public class LoginPageObject extends BasePage {
 	private WebDriver driver;
 	
-	public LoginPageObject(WebDriver _driver) {
-		this.driver = _driver;
+	public LoginPageObject(WebDriver driver) {
+		this.driver = driver;
 	}
 
 	public void enterToEmailTextbox(String emailAddress) {
@@ -25,6 +25,9 @@ public class LoginPageObject extends BasePage {
 	public HomePageObject clickToLoginButton() {
 		waitForElementClickAble(driver, LoginPageUI.LONGIN_BUTTON);
 		clickToElement(driver, LoginPageUI.LONGIN_BUTTON);
+		if(driver.toString().contains("chrome")) {
+			sleepInSecond(3);
+		}
 		return PageGeneratorManager.getHomePage(driver);
 	}
 }

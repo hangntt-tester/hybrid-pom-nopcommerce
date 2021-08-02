@@ -15,12 +15,18 @@ public class HomePageObject extends BasePage {
 	public RegisterPageObject clickToRegisterLink() {
 		waitForElementClickAble(driver, HomePageUI.REGISTER_LINK);
 		clickToElement(driver, HomePageUI.REGISTER_LINK);
+		if(driver.toString().contains("chrome")) {
+			sleepInSecond(3);
+		}
 		return PageGeneratorManager.getRegisterPage(driver);
 	}
 
 	public LoginPageObject clickToLoginLink() {
 		waitForElementClickAble(driver, HomePageUI.LOGIN_LINK);
 		clickToElement(driver, HomePageUI.LOGIN_LINK);
+		if(driver.toString().contains("chrome")) {
+			sleepInSecond(3);
+		}
 		return PageGeneratorManager.getLoginPage(driver);
 	}
 	
