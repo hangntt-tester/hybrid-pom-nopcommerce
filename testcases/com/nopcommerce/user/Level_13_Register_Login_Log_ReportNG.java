@@ -18,7 +18,7 @@ import pageObjects.user.nopCommerce.PageGeneratorManager;
 import pageObjects.user.nopCommerce.RegisterPageObject;
 import pageObjects.user.nopCommerce.SearchPageObject;
 
-public class Level_13_Register_Login_Log_Report extends BaseTest{
+public class Level_13_Register_Login_Log_ReportNG extends BaseTest{
 	WebDriver driver;
 	HomePageObject homePage;
 	LoginPageObject loginPage;
@@ -88,7 +88,7 @@ public class Level_13_Register_Login_Log_Report extends BaseTest{
 		registerPage.clickToRegisterButton();
 		
 		log.info("User_01_Register - Step 13: Verify success Message is displayed");
-		verifyTrue(registerPage.isRegisterSuccessMessageDisplayed());
+		verifyFalse(registerPage.isRegisterSuccessMessageDisplayed()); // cố tình cho nó false
 		
 		log.info("User_01_Register - Step 14: Click to Logout link");
 		homePage = registerPage.clickToLogoutLink();
