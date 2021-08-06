@@ -8,8 +8,8 @@ import pageUIs.user.nopCommerce.MyAccountPageUI;
 public class MyAccountPageObject extends BasePage {
 	private WebDriver driver;
 	
-	public MyAccountPageObject(WebDriver _driver) {
-		this.driver = _driver;
+	public MyAccountPageObject(WebDriver driver) {
+		this.driver = driver;
 	}
 
 	public boolean isGenderMaleRadioSelected() {

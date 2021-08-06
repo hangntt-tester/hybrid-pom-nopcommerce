@@ -278,3 +278,444 @@
 [INFO ] [2021-08-05 17:41:46,716] ---------- START delete file in folder ----------
 [INFO ] [2021-08-05 17:41:46,717] ---------- END delete file in folder ----------
 [INFO ] [2021-08-05 17:41:58,265]  -------------------------- FAILED -------------------------- 
+[INFO ] [2021-08-06 15:15:03,084] ---------- START delete file in folder ----------
+[INFO ] [2021-08-06 15:15:03,086] ---------- END delete file in folder ----------
+[INFO ] [2021-08-06 15:15:07,223] User_01_Register - Step 01: Click to Register link
+[INFO ] [2021-08-06 15:15:11,696] User_01_Register - Step 02: Click to Male radio button
+[INFO ] [2021-08-06 15:15:11,839] User_01_Register - Step 03: Enter to Firstname textbox
+[INFO ] [2021-08-06 15:15:12,009] User_01_Register - Step 04: Enter to Lastname textbox
+[INFO ] [2021-08-06 15:15:12,143] User_01_Register - Step 05: Select Day dropdown
+[INFO ] [2021-08-06 15:15:12,274] User_01_Register - Step 06: Select Month dropdown
+[INFO ] [2021-08-06 15:15:12,403] User_01_Register - Step07: Select Year dropdown
+[INFO ] [2021-08-06 15:15:12,515] User_01_Register - Step 08: Enter to Email textbox with value: automationfc5174@mailinator.com
+[INFO ] [2021-08-06 15:15:12,672] User_01_Register - Step 09: Enter to Company textbox with value: Automation FC
+[INFO ] [2021-08-06 15:15:12,824] User_01_Register - Step 10: Enter to Password textbox with value: 123456
+[INFO ] [2021-08-06 15:15:12,955] User_01_Register - Step 11: Enter to Confirm Password textbox with value: 123456
+[INFO ] [2021-08-06 15:15:13,105] User_01_Register - Step 12: Click to Register button
+[INFO ] [2021-08-06 15:15:13,997] User_01_Register - Step 13: Verify success Message is displayed
+[INFO ] [2021-08-06 15:15:14,065]  -------------------------- FAILED -------------------------- 
+[INFO ] [2021-08-06 15:15:14,066] User_01_Register - Step 14: Click to Logout link
+[INFO ] [2021-08-06 15:15:19,596] User_02_Login - Step 01: Click to Login link
+[INFO ] [2021-08-06 15:15:23,764] User_02_Login - Step 02: Enter to Email textbox with value: automationfc5174@mailinator.com
+[INFO ] [2021-08-06 15:15:23,921] User_02_Login - Step 03: Enter to Password textbox with value: 123456
+[INFO ] [2021-08-06 15:15:24,066] User_02_Login - Step 04: Click to Login button
+[INFO ] [2021-08-06 15:34:42,725] ---------- START delete file in folder ----------
+[INFO ] [2021-08-06 15:34:42,726] ---------- END delete file in folder ----------
+[INFO ] [2021-08-06 15:34:49,149] User_01_Register - Step 01: Click to Register link
+[INFO ] [2021-08-06 15:34:53,070] User_01_Register - Step 02: Click to Male radio button
+[INFO ] [2021-08-06 15:34:53,296] User_01_Register - Step 03: Enter to Firstname textbox
+[INFO ] [2021-08-06 15:34:53,530] User_01_Register - Step 04: Enter to Lastname textbox
+[INFO ] [2021-08-06 15:34:53,774] User_01_Register - Step 05: Select Day dropdown
+[INFO ] [2021-08-06 15:34:53,993] User_01_Register - Step 06: Select Month dropdown
+[INFO ] [2021-08-06 15:34:54,175] User_01_Register - Step07: Select Year dropdown
+[INFO ] [2021-08-06 15:34:54,385] User_01_Register - Step 08: Enter to Email textbox with value: automationfc8986@mailinator.com
+[INFO ] [2021-08-06 15:34:54,658] User_01_Register - Step 09: Enter to Company textbox with value: Automation FC
+[INFO ] [2021-08-06 15:34:54,919] User_01_Register - Step 10: Enter to Password textbox with value: 123456
+[INFO ] [2021-08-06 15:34:55,105] User_01_Register - Step 11: Enter to Confirm Password textbox with value: 123456
+[INFO ] [2021-08-06 15:34:55,321] User_01_Register - Step 12: Click to Register button
+[INFO ] [2021-08-06 15:34:58,135] User_01_Register - Step 13: Verify success Message is displayed
+[INFO ] [2021-08-06 15:34:58,246]  -------------------------- FAILED -------------------------- 
+[INFO ] [2021-08-06 15:34:58,249] User_01_Register - Step 14: Click to Logout link
+[INFO ] [2021-08-06 15:35:03,905] User_02_Login - Step 01: Click to Login link
+[INFO ] [2021-08-06 15:35:07,783] User_02_Login - Step 02: Enter to Email textbox with value: automationfc8986@mailinator.com
+[INFO ] [2021-08-06 15:35:08,053] User_02_Login - Step 03: Enter to Password textbox with value: 123456
+[INFO ] [2021-08-06 15:35:08,294] User_02_Login - Step 04: Click to Login button
+[INFO ] [2021-08-06 17:37:01,462] ---------- START delete file in folder ----------
+[INFO ] [2021-08-06 17:37:01,463] ---------- END delete file in folder ----------
+[INFO ] [2021-08-06 17:37:07,330] User_01_Register - Step 01: Click to Register link
+[INFO ] [2021-08-06 17:37:11,191] User_01_Register - Step 02: Click to Male radio button
+[INFO ] [2021-08-06 17:37:11,397] User_01_Register - Step 03: Enter to Firstname textbox
+[INFO ] [2021-08-06 17:37:11,652] User_01_Register - Step 04: Enter to Lastname textbox
+[INFO ] [2021-08-06 17:37:11,831] User_01_Register - Step 05: Select Day dropdown
+[INFO ] [2021-08-06 17:37:11,986] User_01_Register - Step 06: Select Month dropdown
+[INFO ] [2021-08-06 17:37:12,145] User_01_Register - Step07: Select Year dropdown
+[INFO ] [2021-08-06 17:37:12,315] User_01_Register - Step 08: Enter to Email textbox with value: automationfc7522@mailinator.com
+[INFO ] [2021-08-06 17:37:12,572] User_01_Register - Step 09: Enter to Company textbox with value: Automation FC
+[INFO ] [2021-08-06 17:37:12,754] User_01_Register - Step 10: Enter to Password textbox with value: 123456
+[INFO ] [2021-08-06 17:37:12,947] User_01_Register - Step 11: Enter to Confirm Password textbox with value: 123456
+[INFO ] [2021-08-06 17:37:13,141] User_01_Register - Step 12: Click to Register button
+[INFO ] [2021-08-06 17:37:14,246] User_01_Register - Step 13: Verify success Message is displayed
+[INFO ] [2021-08-06 17:37:14,354]  -------------------------- FAILED -------------------------- 
+[INFO ] [2021-08-06 17:37:14,358] User_01_Register - Step 14: Click to Logout link
+[INFO ] [2021-08-06 17:37:20,179] User_02_Login - Step 01: Click to Login link
+[INFO ] [2021-08-06 17:37:24,509] User_02_Login - Step 02: Enter to Email textbox with value: automationfc7522@mailinator.com
+[INFO ] [2021-08-06 17:37:24,767] User_02_Login - Step 03: Enter to Password textbox with value: 123456
+[INFO ] [2021-08-06 17:37:25,002] User_02_Login - Step 04: Click to Login button
+[INFO ] [2021-08-06 18:20:38,496] ---------- START delete file in folder ----------
+[INFO ] [2021-08-06 18:20:38,497] ---------- END delete file in folder ----------
+[INFO ] [2021-08-06 18:20:45,109] User_01_Register - Step 01: Click to Register link
+[INFO ] [2021-08-06 18:20:49,952] User_01_Register - Step 02: Click to Male radio button
+[INFO ] [2021-08-06 18:20:50,173] User_01_Register - Step 03: Enter to Firstname textbox
+[INFO ] [2021-08-06 18:20:50,474] User_01_Register - Step 04: Enter to Lastname textbox
+[INFO ] [2021-08-06 18:20:50,727] User_01_Register - Step 05: Select Day dropdown
+[INFO ] [2021-08-06 18:20:50,934] User_01_Register - Step 06: Select Month dropdown
+[INFO ] [2021-08-06 18:20:51,091] User_01_Register - Step07: Select Year dropdown
+[INFO ] [2021-08-06 18:20:51,264] User_01_Register - Step 08: Enter to Email textbox with value: automationfc9137@mailinator.com
+[INFO ] [2021-08-06 18:20:51,458] User_01_Register - Step 09: Enter to Company textbox with value: Automation FC
+[INFO ] [2021-08-06 18:20:51,662] User_01_Register - Step 10: Enter to Password textbox with value: 123456
+[INFO ] [2021-08-06 18:20:51,857] User_01_Register - Step 11: Enter to Confirm Password textbox with value: 123456
+[INFO ] [2021-08-06 18:20:52,048] User_01_Register - Step 12: Click to Register button
+[INFO ] [2021-08-06 18:20:54,438] User_01_Register - Step 13: Verify success Message is displayed
+[INFO ] [2021-08-06 18:20:54,546]  -------------------------- FAILED -------------------------- 
+[INFO ] [2021-08-06 18:20:54,553] User_01_Register - Step 14: Click to Logout link
+[INFO ] [2021-08-06 18:21:00,145] User_02_Login - Step 01: Click to Login link
+[INFO ] [2021-08-06 18:21:03,938] User_02_Login - Step 02: Enter to Email textbox with value: automationfc9137@mailinator.com
+[INFO ] [2021-08-06 18:21:04,204] User_02_Login - Step 03: Enter to Password textbox with value: 123456
+[INFO ] [2021-08-06 18:21:04,450] User_02_Login - Step 04: Click to Login button
+[INFO ] [2021-08-06 18:37:37,650] ---------- START delete file in folder ----------
+[INFO ] [2021-08-06 18:37:37,651] ---------- END delete file in folder ----------
+[INFO ] [2021-08-06 18:37:43,437] User_01_Register - Step 01: Click to Register link
+[INFO ] [2021-08-06 18:37:47,509] User_01_Register - Step 02: Click to Male radio button
+[INFO ] [2021-08-06 18:37:47,719] User_01_Register - Step 03: Enter to Firstname textbox
+[INFO ] [2021-08-06 18:37:47,942] User_01_Register - Step 04: Enter to Lastname textbox
+[INFO ] [2021-08-06 18:37:48,130] User_01_Register - Step 05: Select Day dropdown
+[INFO ] [2021-08-06 18:37:48,371] User_01_Register - Step 06: Select Month dropdown
+[INFO ] [2021-08-06 18:37:48,542] User_01_Register - Step07: Select Year dropdown
+[INFO ] [2021-08-06 18:37:48,692] User_01_Register - Step 08: Enter to Email textbox with value: automationfc8824@mailinator.com
+[INFO ] [2021-08-06 18:37:48,889] User_01_Register - Step 09: Enter to Company textbox with value: Automation FC
+[INFO ] [2021-08-06 18:37:49,090] User_01_Register - Step 10: Enter to Password textbox with value: 123456
+[INFO ] [2021-08-06 18:37:49,280] User_01_Register - Step 11: Enter to Confirm Password textbox with value: 123456
+[INFO ] [2021-08-06 18:37:49,489] User_01_Register - Step 12: Click to Register button
+[INFO ] [2021-08-06 18:37:51,888] User_01_Register - Step 13: Verify success Message is displayed
+[INFO ] [2021-08-06 18:37:52,003]  -------------------------- FAILED -------------------------- 
+[INFO ] [2021-08-06 18:37:52,012] User_01_Register - Step 14: Click to Logout link
+[INFO ] [2021-08-06 18:37:57,681] User_02_Login - Step 01: Click to Login link
+[INFO ] [2021-08-06 18:38:02,091] User_02_Login - Step 02: Enter to Email textbox with value: automationfc8824@mailinator.com
+[INFO ] [2021-08-06 18:38:02,359] User_02_Login - Step 03: Enter to Password textbox with value: 123456
+[INFO ] [2021-08-06 18:38:02,602] User_02_Login - Step 04: Click to Login button
+[INFO ] [2021-08-06 18:39:56,502] ---------- START delete file in folder ----------
+[INFO ] [2021-08-06 18:39:56,504] ---------- END delete file in folder ----------
+[INFO ] [2021-08-06 18:40:02,236] User_01_Register - Step 01: Click to Register link
+[INFO ] [2021-08-06 18:40:06,894] User_01_Register - Step 02: Click to Male radio button
+[INFO ] [2021-08-06 18:40:07,111] User_01_Register - Step 03: Enter to Firstname textbox
+[INFO ] [2021-08-06 18:40:07,341] User_01_Register - Step 04: Enter to Lastname textbox
+[INFO ] [2021-08-06 18:40:07,547] User_01_Register - Step 05: Select Day dropdown
+[INFO ] [2021-08-06 18:40:07,742] User_01_Register - Step 06: Select Month dropdown
+[INFO ] [2021-08-06 18:40:07,914] User_01_Register - Step07: Select Year dropdown
+[INFO ] [2021-08-06 18:40:08,055] User_01_Register - Step 08: Enter to Email textbox with value: automationfc2250@mailinator.com
+[INFO ] [2021-08-06 18:40:08,248] User_01_Register - Step 09: Enter to Company textbox with value: Automation FC
+[INFO ] [2021-08-06 18:40:08,440] User_01_Register - Step 10: Enter to Password textbox with value: 123456
+[INFO ] [2021-08-06 18:40:08,641] User_01_Register - Step 11: Enter to Confirm Password textbox with value: 123456
+[INFO ] [2021-08-06 18:40:08,860] User_01_Register - Step 12: Click to Register button
+[INFO ] [2021-08-06 18:40:11,322] User_01_Register - Step 13: Verify success Message is displayed
+[INFO ] [2021-08-06 18:40:11,446]  -------------------------- FAILED -------------------------- 
+[INFO ] [2021-08-06 18:40:11,455] User_01_Register - Step 14: Click to Logout link
+[INFO ] [2021-08-06 18:40:17,865] User_02_Login - Step 01: Click to Login link
+[INFO ] [2021-08-06 18:40:21,615] User_02_Login - Step 02: Enter to Email textbox with value: automationfc2250@mailinator.com
+[INFO ] [2021-08-06 18:40:21,886] User_02_Login - Step 03: Enter to Password textbox with value: 123456
+[INFO ] [2021-08-06 18:40:22,125] User_02_Login - Step 04: Click to Login button
+[INFO ] [2021-08-06 20:33:57,511] ---------- START delete file in folder ----------
+[INFO ] [2021-08-06 20:33:57,513] ---------- END delete file in folder ----------
+[INFO ] [2021-08-06 20:34:02,539] User_01_Register - Step 01: Click to Register link
+[INFO ] [2021-08-06 20:34:07,035] User_01_Register - Step 02: Click to Male radio button
+[INFO ] [2021-08-06 20:34:07,192] User_01_Register - Step 03: Enter to Firstname textbox
+[INFO ] [2021-08-06 20:34:07,342] User_01_Register - Step 04: Enter to Lastname textbox
+[INFO ] [2021-08-06 20:34:07,478] User_01_Register - Step 05: Select Day dropdown
+[INFO ] [2021-08-06 20:34:07,607] User_01_Register - Step 06: Select Month dropdown
+[INFO ] [2021-08-06 20:34:07,727] User_01_Register - Step07: Select Year dropdown
+[INFO ] [2021-08-06 20:34:07,854] User_01_Register - Step 08: Enter to Email textbox with value: automationfc2559@mailinator.com
+[INFO ] [2021-08-06 20:34:08,015] User_01_Register - Step 09: Enter to Company textbox with value: Automation FC
+[INFO ] [2021-08-06 20:34:08,163] User_01_Register - Step 10: Enter to Password textbox with value: 123456
+[INFO ] [2021-08-06 20:34:08,297] User_01_Register - Step 11: Enter to Confirm Password textbox with value: 123456
+[INFO ] [2021-08-06 20:34:08,440] User_01_Register - Step 12: Click to Register button
+[INFO ] [2021-08-06 20:34:09,872] User_01_Register - Step 13: Verify success Message is displayed
+[INFO ] [2021-08-06 20:34:09,938]  -------------------------- FAILED -------------------------- 
+[INFO ] [2021-08-06 20:34:09,943] User_01_Register - Step 14: Click to Logout link
+[INFO ] [2021-08-06 20:34:15,565] User_02_Login - Step 01: Click to Login link
+[INFO ] [2021-08-06 20:34:19,067] User_02_Login - Step 02: Enter to Email textbox with value: automationfc2559@mailinator.com
+[INFO ] [2021-08-06 20:34:19,223] User_02_Login - Step 03: Enter to Password textbox with value: 123456
+[INFO ] [2021-08-06 20:34:19,353] User_02_Login - Step 04: Click to Login button
+[INFO ] [2021-08-06 20:37:12,137] ---------- START delete file in folder ----------
+[INFO ] [2021-08-06 20:37:12,139] ---------- END delete file in folder ----------
+[INFO ] [2021-08-06 20:37:16,856] User_01_Register - Step 01: Click to Register link
+[INFO ] [2021-08-06 20:37:21,415] User_01_Register - Step 02: Click to Male radio button
+[INFO ] [2021-08-06 20:37:21,560] User_01_Register - Step 03: Enter to Firstname textbox
+[INFO ] [2021-08-06 20:37:21,714] User_01_Register - Step 04: Enter to Lastname textbox
+[INFO ] [2021-08-06 20:37:21,851] User_01_Register - Step 05: Select Day dropdown
+[INFO ] [2021-08-06 20:37:21,971] User_01_Register - Step 06: Select Month dropdown
+[INFO ] [2021-08-06 20:37:22,098] User_01_Register - Step07: Select Year dropdown
+[INFO ] [2021-08-06 20:37:22,223] User_01_Register - Step 08: Enter to Email textbox with value: automationfc8097@mailinator.com
+[INFO ] [2021-08-06 20:37:22,382] User_01_Register - Step 09: Enter to Company textbox with value: Automation FC
+[INFO ] [2021-08-06 20:37:22,534] User_01_Register - Step 10: Enter to Password textbox with value: 123456
+[INFO ] [2021-08-06 20:37:22,677] User_01_Register - Step 11: Enter to Confirm Password textbox with value: 123456
+[INFO ] [2021-08-06 20:37:22,823] User_01_Register - Step 12: Click to Register button
+[INFO ] [2021-08-06 20:37:24,953] User_01_Register - Step 13: Verify success Message is displayed
+[INFO ] [2021-08-06 20:37:25,018]  -------------------------- FAILED -------------------------- 
+[INFO ] [2021-08-06 20:37:25,022] User_01_Register - Step 14: Click to Logout link
+[INFO ] [2021-08-06 20:37:29,891] User_02_Login - Step 01: Click to Login link
+[INFO ] [2021-08-06 20:37:33,393] User_02_Login - Step 02: Enter to Email textbox with value: automationfc8097@mailinator.com
+[INFO ] [2021-08-06 20:37:33,544] User_02_Login - Step 03: Enter to Password textbox with value: 123456
+[INFO ] [2021-08-06 20:37:33,681] User_02_Login - Step 04: Click to Login button
+[INFO ] [2021-08-06 20:39:44,812] ---------- START delete file in folder ----------
+[INFO ] [2021-08-06 20:39:44,813] ---------- END delete file in folder ----------
+[INFO ] [2021-08-06 20:39:49,506] User_01_Register - Step 01: Click to Register link
+[INFO ] [2021-08-06 20:39:54,011] User_01_Register - Step 02: Click to Male radio button
+[INFO ] [2021-08-06 20:39:54,172] User_01_Register - Step 03: Enter to Firstname textbox
+[INFO ] [2021-08-06 20:39:54,322] User_01_Register - Step 04: Enter to Lastname textbox
+[INFO ] [2021-08-06 20:39:54,474] User_01_Register - Step 05: Select Day dropdown
+[INFO ] [2021-08-06 20:39:54,602] User_01_Register - Step 06: Select Month dropdown
+[INFO ] [2021-08-06 20:39:54,730] User_01_Register - Step07: Select Year dropdown
+[INFO ] [2021-08-06 20:39:54,856] User_01_Register - Step 08: Enter to Email textbox with value: automationfc9378@mailinator.com
+[INFO ] [2021-08-06 20:39:55,018] User_01_Register - Step 09: Enter to Company textbox with value: Automation FC
+[INFO ] [2021-08-06 20:39:55,172] User_01_Register - Step 10: Enter to Password textbox with value: 123456
+[INFO ] [2021-08-06 20:39:55,320] User_01_Register - Step 11: Enter to Confirm Password textbox with value: 123456
+[INFO ] [2021-08-06 20:39:55,463] User_01_Register - Step 12: Click to Register button
+[INFO ] [2021-08-06 20:39:56,984] User_01_Register - Step 13: Verify success Message is displayed
+[INFO ] [2021-08-06 20:39:57,046]  -------------------------- FAILED -------------------------- 
+[INFO ] [2021-08-06 20:39:57,049] User_01_Register - Step 14: Click to Logout link
+[INFO ] [2021-08-06 20:40:01,959] User_02_Login - Step 01: Click to Login link
+[INFO ] [2021-08-06 20:40:05,460] User_02_Login - Step 02: Enter to Email textbox with value: automationfc9378@mailinator.com
+[INFO ] [2021-08-06 20:40:05,610] User_02_Login - Step 03: Enter to Password textbox with value: 123456
+[INFO ] [2021-08-06 20:40:05,745] User_02_Login - Step 04: Click to Login button
+[INFO ] [2021-08-06 20:51:17,979] ---------- START delete file in folder ----------
+[INFO ] [2021-08-06 20:51:17,980] ---------- END delete file in folder ----------
+[INFO ] [2021-08-06 20:51:22,689] User_01_Register - Step 01: Click to Register link
+[INFO ] [2021-08-06 20:51:27,179] User_01_Register - Step 02: Click to Male radio button
+[INFO ] [2021-08-06 20:51:27,318] User_01_Register - Step 03: Enter to Firstname textbox
+[INFO ] [2021-08-06 20:51:27,474] User_01_Register - Step 04: Enter to Lastname textbox
+[INFO ] [2021-08-06 20:51:27,609] User_01_Register - Step 05: Select Day dropdown
+[INFO ] [2021-08-06 20:51:27,733] User_01_Register - Step 06: Select Month dropdown
+[INFO ] [2021-08-06 20:51:27,857] User_01_Register - Step07: Select Year dropdown
+[INFO ] [2021-08-06 20:51:27,983] User_01_Register - Step 08: Enter to Email textbox with value: automationfc8784@mailinator.com
+[INFO ] [2021-08-06 20:51:28,143] User_01_Register - Step 09: Enter to Company textbox with value: Automation FC
+[INFO ] [2021-08-06 20:51:28,291] User_01_Register - Step 10: Enter to Password textbox with value: 123456
+[INFO ] [2021-08-06 20:51:28,444] User_01_Register - Step 11: Enter to Confirm Password textbox with value: 123456
+[INFO ] [2021-08-06 20:51:28,585] User_01_Register - Step 12: Click to Register button
+[INFO ] [2021-08-06 20:51:30,682] User_01_Register - Step 13: Verify success Message is displayed
+[INFO ] [2021-08-06 20:51:30,738]  -------------------------- FAILED -------------------------- 
+[INFO ] [2021-08-06 20:51:30,742] User_01_Register - Step 14: Click to Logout link
+[INFO ] [2021-08-06 20:51:34,972] User_02_Login - Step 01: Click to Login link
+[INFO ] [2021-08-06 20:51:38,469] User_02_Login - Step 02: Enter to Email textbox with value: automationfc8784@mailinator.com
+[INFO ] [2021-08-06 20:51:38,619] User_02_Login - Step 03: Enter to Password textbox with value: 123456
+[INFO ] [2021-08-06 20:51:38,754] User_02_Login - Step 04: Click to Login button
+[INFO ] [2021-08-06 21:17:31,755] ---------- START delete file in folder ----------
+[INFO ] [2021-08-06 21:17:31,756] ---------- END delete file in folder ----------
+[INFO ] [2021-08-06 21:17:36,651] User_01_Register - Step 01: Click to Register link
+[INFO ] [2021-08-06 21:17:41,221] User_01_Register - Step 02: Click to Male radio button
+[INFO ] [2021-08-06 21:17:41,346] User_01_Register - Step 03: Enter to Firstname textbox
+[INFO ] [2021-08-06 21:17:41,510] User_01_Register - Step 04: Enter to Lastname textbox
+[INFO ] [2021-08-06 21:17:41,645] User_01_Register - Step 05: Select Day dropdown
+[INFO ] [2021-08-06 21:17:41,773] User_01_Register - Step 06: Select Month dropdown
+[INFO ] [2021-08-06 21:17:41,897] User_01_Register - Step07: Select Year dropdown
+[INFO ] [2021-08-06 21:17:42,020] User_01_Register - Step 08: Enter to Email textbox with value: automationfc3111@mailinator.com
+[INFO ] [2021-08-06 21:17:42,181] User_01_Register - Step 09: Enter to Company textbox with value: Automation FC
+[INFO ] [2021-08-06 21:17:42,330] User_01_Register - Step 10: Enter to Password textbox with value: 123456
+[INFO ] [2021-08-06 21:17:42,461] User_01_Register - Step 11: Enter to Confirm Password textbox with value: 123456
+[INFO ] [2021-08-06 21:17:42,609] User_01_Register - Step 12: Click to Register button
+[INFO ] [2021-08-06 21:17:44,835] User_01_Register - Step 13: Verify success Message is displayed
+[INFO ] [2021-08-06 21:17:44,900]  -------------------------- FAILED -------------------------- 
+[INFO ] [2021-08-06 21:17:44,906] User_01_Register - Step 14: Click to Logout link
+[INFO ] [2021-08-06 21:17:50,609] User_02_Login - Step 01: Click to Login link
+[INFO ] [2021-08-06 21:17:54,930] User_02_Login - Step 02: Enter to Email textbox with value: automationfc3111@mailinator.com
+[INFO ] [2021-08-06 21:17:55,082] User_02_Login - Step 03: Enter to Password textbox with value: 123456
+[INFO ] [2021-08-06 21:17:55,229] User_02_Login - Step 04: Click to Login button
+[INFO ] [2021-08-06 21:19:52,401] ---------- START delete file in folder ----------
+[INFO ] [2021-08-06 21:19:52,402] ---------- END delete file in folder ----------
+[INFO ] [2021-08-06 21:19:57,521] User_01_Register - Step 01: Click to Register link
+[INFO ] [2021-08-06 21:20:01,291] User_01_Register - Step 02: Click to Male radio button
+[INFO ] [2021-08-06 21:20:01,444] User_01_Register - Step 03: Enter to Firstname textbox
+[INFO ] [2021-08-06 21:20:01,598] User_01_Register - Step 04: Enter to Lastname textbox
+[INFO ] [2021-08-06 21:20:01,730] User_01_Register - Step 05: Select Day dropdown
+[INFO ] [2021-08-06 21:20:01,873] User_01_Register - Step 06: Select Month dropdown
+[INFO ] [2021-08-06 21:20:01,996] User_01_Register - Step07: Select Year dropdown
+[INFO ] [2021-08-06 21:20:02,125] User_01_Register - Step 08: Enter to Email textbox with value: automationfc3989@mailinator.com
+[INFO ] [2021-08-06 21:20:02,282] User_01_Register - Step 09: Enter to Company textbox with value: Automation FC
+[INFO ] [2021-08-06 21:20:02,434] User_01_Register - Step 10: Enter to Password textbox with value: 123456
+[INFO ] [2021-08-06 21:20:02,580] User_01_Register - Step 11: Enter to Confirm Password textbox with value: 123456
+[INFO ] [2021-08-06 21:20:02,726] User_01_Register - Step 12: Click to Register button
+[INFO ] [2021-08-06 21:20:05,028] User_01_Register - Step 13: Verify success Message is displayed
+[INFO ] [2021-08-06 21:20:05,100]  -------------------------- FAILED -------------------------- 
+[INFO ] [2021-08-06 21:20:05,104] User_01_Register - Step 14: Click to Logout link
+[INFO ] [2021-08-06 21:20:10,827] User_02_Login - Step 01: Click to Login link
+[INFO ] [2021-08-06 21:20:14,948] User_02_Login - Step 02: Enter to Email textbox with value: automationfc3989@mailinator.com
+[INFO ] [2021-08-06 21:20:15,100] User_02_Login - Step 03: Enter to Password textbox with value: 123456
+[INFO ] [2021-08-06 21:20:15,233] User_02_Login - Step 04: Click to Login button
+[INFO ] [2021-08-06 21:28:46,525] ---------- START delete file in folder ----------
+[INFO ] [2021-08-06 21:28:46,526] ---------- END delete file in folder ----------
+[INFO ] [2021-08-06 21:28:51,811] User_01_Register - Step 01: Click to Register link
+[INFO ] [2021-08-06 21:28:56,548] User_01_Register - Step 02: Click to Male radio button
+[INFO ] [2021-08-06 21:28:56,705] User_01_Register - Step 03: Enter to Firstname textbox
+[INFO ] [2021-08-06 21:28:56,852] User_01_Register - Step 04: Enter to Lastname textbox
+[INFO ] [2021-08-06 21:28:56,995] User_01_Register - Step 05: Select Day dropdown
+[INFO ] [2021-08-06 21:28:57,115] User_01_Register - Step 06: Select Month dropdown
+[INFO ] [2021-08-06 21:28:57,240] User_01_Register - Step07: Select Year dropdown
+[INFO ] [2021-08-06 21:28:57,365] User_01_Register - Step 08: Enter to Email textbox with value: automationfc2829@mailinator.com
+[INFO ] [2021-08-06 21:28:57,519] User_01_Register - Step 09: Enter to Company textbox with value: Automation FC
+[INFO ] [2021-08-06 21:28:57,659] User_01_Register - Step 10: Enter to Password textbox with value: 123456
+[INFO ] [2021-08-06 21:28:57,795] User_01_Register - Step 11: Enter to Confirm Password textbox with value: 123456
+[INFO ] [2021-08-06 21:28:57,934] User_01_Register - Step 12: Click to Register button
+[INFO ] [2021-08-06 21:29:00,365] User_01_Register - Step 13: Verify success Message is displayed
+[INFO ] [2021-08-06 21:29:00,423]  -------------------------- FAILED -------------------------- 
+[INFO ] [2021-08-06 21:29:00,427] User_01_Register - Step 14: Click to Logout link
+[INFO ] [2021-08-06 21:29:05,607] User_02_Login - Step 01: Click to Login link
+[INFO ] [2021-08-06 21:29:09,151] User_02_Login - Step 02: Enter to Email textbox with value: automationfc2829@mailinator.com
+[INFO ] [2021-08-06 21:29:09,305] User_02_Login - Step 03: Enter to Password textbox with value: 123456
+[INFO ] [2021-08-06 21:29:09,437] User_02_Login - Step 04: Click to Login button
+[INFO ] [2021-08-06 21:32:34,995] ---------- START delete file in folder ----------
+[INFO ] [2021-08-06 21:32:34,996] ---------- END delete file in folder ----------
+[INFO ] [2021-08-06 21:32:40,239] User_01_Register - Step 01: Click to Register link
+[INFO ] [2021-08-06 21:32:45,361] User_01_Register - Step 02: Click to Male radio button
+[INFO ] [2021-08-06 21:32:45,502] User_01_Register - Step 03: Enter to Firstname textbox
+[INFO ] [2021-08-06 21:32:45,657] User_01_Register - Step 04: Enter to Lastname textbox
+[INFO ] [2021-08-06 21:32:45,794] User_01_Register - Step 05: Select Day dropdown
+[INFO ] [2021-08-06 21:32:45,920] User_01_Register - Step 06: Select Month dropdown
+[INFO ] [2021-08-06 21:32:46,044] User_01_Register - Step07: Select Year dropdown
+[INFO ] [2021-08-06 21:32:46,169] User_01_Register - Step 08: Enter to Email textbox with value: automationfc9522@mailinator.com
+[INFO ] [2021-08-06 21:32:46,329] User_01_Register - Step 09: Enter to Company textbox with value: Automation FC
+[INFO ] [2021-08-06 21:32:46,481] User_01_Register - Step 10: Enter to Password textbox with value: 123456
+[INFO ] [2021-08-06 21:32:46,617] User_01_Register - Step 11: Enter to Confirm Password textbox with value: 123456
+[INFO ] [2021-08-06 21:32:46,755] User_01_Register - Step 12: Click to Register button
+[INFO ] [2021-08-06 21:32:48,298] User_01_Register - Step 13: Verify success Message is displayed
+[INFO ] [2021-08-06 21:32:48,370]  -------------------------- FAILED -------------------------- 
+[INFO ] [2021-08-06 21:32:48,375] User_01_Register - Step 14: Click to Logout link
+[INFO ] [2021-08-06 21:32:53,256] User_02_Login - Step 01: Click to Login link
+[INFO ] [2021-08-06 21:32:57,738] User_02_Login - Step 02: Enter to Email textbox with value: automationfc9522@mailinator.com
+[INFO ] [2021-08-06 21:32:57,890] User_02_Login - Step 03: Enter to Password textbox with value: 123456
+[INFO ] [2021-08-06 21:32:58,037] User_02_Login - Step 04: Click to Login button
+[INFO ] [2021-08-06 21:55:07,226] ---------- START delete file in folder ----------
+[INFO ] [2021-08-06 21:55:07,227] ---------- END delete file in folder ----------
+[INFO ] [2021-08-06 21:55:13,074] User_01_Register - Step 01: Click to Register link
+[INFO ] [2021-08-06 21:55:17,954] User_01_Register - Step 02: Click to Male radio button
+[INFO ] [2021-08-06 21:55:18,092] User_01_Register - Step 03: Enter to Firstname textbox
+[INFO ] [2021-08-06 21:55:18,246] User_01_Register - Step 04: Enter to Lastname textbox
+[INFO ] [2021-08-06 21:55:18,384] User_01_Register - Step 05: Select Day dropdown
+[INFO ] [2021-08-06 21:55:18,512] User_01_Register - Step 06: Select Month dropdown
+[INFO ] [2021-08-06 21:55:18,634] User_01_Register - Step07: Select Year dropdown
+[INFO ] [2021-08-06 21:55:18,758] User_01_Register - Step 08: Enter to Email textbox with value: automationfc1620@mailinator.com
+[INFO ] [2021-08-06 21:55:18,915] User_01_Register - Step 09: Enter to Company textbox with value: Automation FC
+[INFO ] [2021-08-06 21:55:19,063] User_01_Register - Step 10: Enter to Password textbox with value: 123456
+[INFO ] [2021-08-06 21:55:19,216] User_01_Register - Step 11: Enter to Confirm Password textbox with value: 123456
+[INFO ] [2021-08-06 21:55:19,354] User_01_Register - Step 12: Click to Register button
+[INFO ] [2021-08-06 21:55:21,995] User_01_Register - Step 13: Verify success Message is displayed
+[INFO ] [2021-08-06 21:55:22,063]  -------------------------- FAILED -------------------------- 
+[INFO ] [2021-08-06 21:55:22,067] User_01_Register - Step 14: Click to Logout link
+[INFO ] [2021-08-06 21:55:28,646] User_02_Login - Step 01: Click to Login link
+[INFO ] [2021-08-06 21:55:32,990] User_02_Login - Step 02: Enter to Email textbox with value: automationfc1620@mailinator.com
+[INFO ] [2021-08-06 21:55:33,142] User_02_Login - Step 03: Enter to Password textbox with value: 123456
+[INFO ] [2021-08-06 21:55:33,274] User_02_Login - Step 04: Click to Login button
+[INFO ] [2021-08-06 21:57:27,191] ---------- START delete file in folder ----------
+[INFO ] [2021-08-06 21:57:27,192] ---------- END delete file in folder ----------
+[INFO ] [2021-08-06 21:57:31,366] User_01_Register - Step 01: Click to Register link
+[INFO ] [2021-08-06 21:57:35,128] User_01_Register - Step 02: Click to Male radio button
+[INFO ] [2021-08-06 21:57:35,269] User_01_Register - Step 03: Enter to Firstname textbox
+[INFO ] [2021-08-06 21:57:35,421] User_01_Register - Step 04: Enter to Lastname textbox
+[INFO ] [2021-08-06 21:57:35,562] User_01_Register - Step 05: Select Day dropdown
+[INFO ] [2021-08-06 21:57:35,691] User_01_Register - Step 06: Select Month dropdown
+[INFO ] [2021-08-06 21:57:35,815] User_01_Register - Step07: Select Year dropdown
+[INFO ] [2021-08-06 21:57:35,942] User_01_Register - Step 08: Enter to Email textbox with value: automationfc7224@mailinator.com
+[INFO ] [2021-08-06 21:57:36,097] User_01_Register - Step 09: Enter to Company textbox with value: Automation FC
+[INFO ] [2021-08-06 21:57:36,252] User_01_Register - Step 10: Enter to Password textbox with value: 123456
+[INFO ] [2021-08-06 21:57:36,399] User_01_Register - Step 11: Enter to Confirm Password textbox with value: 123456
+[INFO ] [2021-08-06 21:57:36,536] User_01_Register - Step 12: Click to Register button
+[INFO ] [2021-08-06 21:57:37,546] User_01_Register - Step 13: Verify success Message is displayed
+[INFO ] [2021-08-06 21:57:37,618]  -------------------------- FAILED -------------------------- 
+[INFO ] [2021-08-06 21:57:37,622] User_01_Register - Step 14: Click to Logout link
+[INFO ] [2021-08-06 21:57:42,028] User_02_Login - Step 01: Click to Login link
+[INFO ] [2021-08-06 21:57:45,594] User_02_Login - Step 02: Enter to Email textbox with value: automationfc7224@mailinator.com
+[INFO ] [2021-08-06 21:57:45,749] User_02_Login - Step 03: Enter to Password textbox with value: 123456
+[INFO ] [2021-08-06 21:57:45,894] User_02_Login - Step 04: Click to Login button
+[INFO ] [2021-08-06 22:01:38,400] ---------- START delete file in folder ----------
+[INFO ] [2021-08-06 22:01:38,401] ---------- END delete file in folder ----------
+[INFO ] [2021-08-06 22:01:43,414] User_01_Register - Step 01: Click to Register link
+[INFO ] [2021-08-06 22:01:48,018] User_01_Register - Step 02: Click to Male radio button
+[INFO ] [2021-08-06 22:01:48,171] User_01_Register - Step 03: Enter to Firstname textbox
+[INFO ] [2021-08-06 22:01:48,328] User_01_Register - Step 04: Enter to Lastname textbox
+[INFO ] [2021-08-06 22:01:48,466] User_01_Register - Step 05: Select Day dropdown
+[INFO ] [2021-08-06 22:01:48,590] User_01_Register - Step 06: Select Month dropdown
+[INFO ] [2021-08-06 22:01:48,714] User_01_Register - Step07: Select Year dropdown
+[INFO ] [2021-08-06 22:01:48,835] User_01_Register - Step 08: Enter to Email textbox with value: automationfc5438@mailinator.com
+[INFO ] [2021-08-06 22:01:48,997] User_01_Register - Step 09: Enter to Company textbox with value: Automation FC
+[INFO ] [2021-08-06 22:01:49,151] User_01_Register - Step 10: Enter to Password textbox with value: 123456
+[INFO ] [2021-08-06 22:01:49,297] User_01_Register - Step 11: Enter to Confirm Password textbox with value: 123456
+[INFO ] [2021-08-06 22:01:49,439] User_01_Register - Step 12: Click to Register button
+[INFO ] [2021-08-06 22:01:51,525] User_01_Register - Step 13: Verify success Message is displayed
+[INFO ] [2021-08-06 22:01:51,584]  -------------------------- FAILED -------------------------- 
+[INFO ] [2021-08-06 22:01:51,589] User_01_Register - Step 14: Click to Logout link
+[INFO ] [2021-08-06 22:01:55,771] User_02_Login - Step 01: Click to Login link
+[INFO ] [2021-08-06 22:01:59,893] User_02_Login - Step 02: Enter to Email textbox with value: automationfc5438@mailinator.com
+[INFO ] [2021-08-06 22:02:00,046] User_02_Login - Step 03: Enter to Password textbox with value: 123456
+[INFO ] [2021-08-06 22:02:00,175] User_02_Login - Step 04: Click to Login button
+[INFO ] [2021-08-06 22:06:33,226] ---------- START delete file in folder ----------
+[INFO ] [2021-08-06 22:06:33,227] ---------- END delete file in folder ----------
+[INFO ] [2021-08-06 22:06:38,301] User_01_Register - Step 01: Click to Register link
+[INFO ] [2021-08-06 22:06:43,308] User_01_Register - Step 02: Click to Male radio button
+[INFO ] [2021-08-06 22:06:43,434] User_01_Register - Step 03: Enter to Firstname textbox
+[INFO ] [2021-08-06 22:06:43,585] User_01_Register - Step 04: Enter to Lastname textbox
+[INFO ] [2021-08-06 22:06:43,724] User_01_Register - Step 05: Select Day dropdown
+[INFO ] [2021-08-06 22:06:43,847] User_01_Register - Step 06: Select Month dropdown
+[INFO ] [2021-08-06 22:06:43,969] User_01_Register - Step07: Select Year dropdown
+[INFO ] [2021-08-06 22:06:44,094] User_01_Register - Step 08: Enter to Email textbox with value: automationfc1540@mailinator.com
+[INFO ] [2021-08-06 22:06:44,252] User_01_Register - Step 09: Enter to Company textbox with value: Automation FC
+[INFO ] [2021-08-06 22:06:44,404] User_01_Register - Step 10: Enter to Password textbox with value: 123456
+[INFO ] [2021-08-06 22:06:44,543] User_01_Register - Step 11: Enter to Confirm Password textbox with value: 123456
+[INFO ] [2021-08-06 22:06:44,686] User_01_Register - Step 12: Click to Register button
+[INFO ] [2021-08-06 22:06:47,431] User_01_Register - Step 13: Verify success Message is displayed
+[INFO ] [2021-08-06 22:06:47,493]  -------------------------- FAILED -------------------------- 
+[INFO ] [2021-08-06 22:06:47,497] User_01_Register - Step 14: Click to Logout link
+[INFO ] [2021-08-06 22:06:52,877] User_02_Login - Step 01: Click to Login link
+[INFO ] [2021-08-06 22:06:57,317] User_02_Login - Step 02: Enter to Email textbox with value: automationfc1540@mailinator.com
+[INFO ] [2021-08-06 22:06:57,474] User_02_Login - Step 03: Enter to Password textbox with value: 123456
+[INFO ] [2021-08-06 22:06:57,617] User_02_Login - Step 04: Click to Login button
+[INFO ] [2021-08-06 22:07:30,493] ---------- START delete file in folder ----------
+[INFO ] [2021-08-06 22:07:30,494] ---------- END delete file in folder ----------
+[INFO ] [2021-08-06 22:07:36,066] User_01_Register - Step 01: Click to Register link
+[INFO ] [2021-08-06 22:07:41,008] User_01_Register - Step 02: Click to Male radio button
+[INFO ] [2021-08-06 22:07:41,147] User_01_Register - Step 03: Enter to Firstname textbox
+[INFO ] [2021-08-06 22:07:41,299] User_01_Register - Step 04: Enter to Lastname textbox
+[INFO ] [2021-08-06 22:07:41,436] User_01_Register - Step 05: Select Day dropdown
+[INFO ] [2021-08-06 22:07:41,562] User_01_Register - Step 06: Select Month dropdown
+[INFO ] [2021-08-06 22:07:41,685] User_01_Register - Step07: Select Year dropdown
+[INFO ] [2021-08-06 22:07:41,809] User_01_Register - Step 08: Enter to Email textbox with value: automationfc6598@mailinator.com
+[INFO ] [2021-08-06 22:07:41,969] User_01_Register - Step 09: Enter to Company textbox with value: Automation FC
+[INFO ] [2021-08-06 22:07:42,121] User_01_Register - Step 10: Enter to Password textbox with value: 123456
+[INFO ] [2021-08-06 22:07:42,253] User_01_Register - Step 11: Enter to Confirm Password textbox with value: 123456
+[INFO ] [2021-08-06 22:07:42,402] User_01_Register - Step 12: Click to Register button
+[INFO ] [2021-08-06 22:07:44,926] User_01_Register - Step 13: Verify success Message is displayed
+[INFO ] [2021-08-06 22:07:44,988]  -------------------------- FAILED -------------------------- 
+[INFO ] [2021-08-06 22:07:44,992] User_01_Register - Step 14: Click to Logout link
+[INFO ] [2021-08-06 22:07:50,246] User_02_Login - Step 01: Click to Login link
+[INFO ] [2021-08-06 22:07:54,416] User_02_Login - Step 02: Enter to Email textbox with value: automationfc6598@mailinator.com
+[INFO ] [2021-08-06 22:07:54,568] User_02_Login - Step 03: Enter to Password textbox with value: 123456
+[INFO ] [2021-08-06 22:07:54,715] User_02_Login - Step 04: Click to Login button
+[INFO ] [2021-08-06 22:23:57,391] ---------- START delete file in folder ----------
+[INFO ] [2021-08-06 22:23:57,392] ---------- END delete file in folder ----------
+[INFO ] [2021-08-06 22:24:02,488] User_01_Register - Step 01: Click to Register link
+[INFO ] [2021-08-06 22:24:06,370] User_01_Register - Step 02: Click to Male radio button
+[INFO ] [2021-08-06 22:24:06,526] User_01_Register - Step 03: Enter to Firstname textbox
+[INFO ] [2021-08-06 22:24:06,674] User_01_Register - Step 04: Enter to Lastname textbox
+[INFO ] [2021-08-06 22:24:06,811] User_01_Register - Step 05: Select Day dropdown
+[INFO ] [2021-08-06 22:24:06,938] User_01_Register - Step 06: Select Month dropdown
+[INFO ] [2021-08-06 22:24:07,064] User_01_Register - Step07: Select Year dropdown
+[INFO ] [2021-08-06 22:24:07,187] User_01_Register - Step 08: Enter to Email textbox with value: automationfc8050@mailinator.com
+[INFO ] [2021-08-06 22:24:07,346] User_01_Register - Step 09: Enter to Company textbox with value: Automation FC
+[INFO ] [2021-08-06 22:24:07,496] User_01_Register - Step 10: Enter to Password textbox with value: 123456
+[INFO ] [2021-08-06 22:24:07,644] User_01_Register - Step 11: Enter to Confirm Password textbox with value: 123456
+[INFO ] [2021-08-06 22:24:07,785] User_01_Register - Step 12: Click to Register button
+[INFO ] [2021-08-06 22:24:10,138] User_01_Register - Step 13: Verify success Message is displayed
+[INFO ] [2021-08-06 22:24:10,201]  -------------------------- FAILED -------------------------- 
+[INFO ] [2021-08-06 22:24:10,205] User_01_Register - Step 14: Click to Logout link
+[INFO ] [2021-08-06 22:24:15,135] User_02_Login - Step 01: Click to Login link
+[INFO ] [2021-08-06 22:24:19,392] User_02_Login - Step 02: Enter to Email textbox with value: automationfc8050@mailinator.com
+[INFO ] [2021-08-06 22:24:19,544] User_02_Login - Step 03: Enter to Password textbox with value: 123456
+[INFO ] [2021-08-06 22:24:19,673] User_02_Login - Step 04: Click to Login button
+[INFO ] [2021-08-06 22:27:26,032] ---------- START delete file in folder ----------
+[INFO ] [2021-08-06 22:27:26,033] ---------- END delete file in folder ----------
+[INFO ] [2021-08-06 22:27:30,726] User_01_Register - Step 01: Click to Register link
+[INFO ] [2021-08-06 22:27:35,592] User_01_Register - Step 02: Click to Male radio button
+[INFO ] [2021-08-06 22:27:35,744] User_01_Register - Step 03: Enter to Firstname textbox
+[INFO ] [2021-08-06 22:27:35,900] User_01_Register - Step 04: Enter to Lastname textbox
+[INFO ] [2021-08-06 22:27:36,049] User_01_Register - Step 05: Select Day dropdown
+[INFO ] [2021-08-06 22:27:36,173] User_01_Register - Step 06: Select Month dropdown
+[INFO ] [2021-08-06 22:27:36,298] User_01_Register - Step07: Select Year dropdown
+[INFO ] [2021-08-06 22:27:36,424] User_01_Register - Step 08: Enter to Email textbox with value: automationfc6868@mailinator.com
+[INFO ] [2021-08-06 22:27:36,578] User_01_Register - Step 09: Enter to Company textbox with value: Automation FC
+[INFO ] [2021-08-06 22:27:36,726] User_01_Register - Step 10: Enter to Password textbox with value: 123456
+[INFO ] [2021-08-06 22:27:36,864] User_01_Register - Step 11: Enter to Confirm Password textbox with value: 123456
+[INFO ] [2021-08-06 22:27:37,006] User_01_Register - Step 12: Click to Register button
+[INFO ] [2021-08-06 22:27:39,145] User_01_Register - Step 13: Verify success Message is displayed
+[INFO ] [2021-08-06 22:27:39,211]  -------------------------- FAILED -------------------------- 
+[INFO ] [2021-08-06 22:27:39,215] User_01_Register - Step 14: Click to Logout link
+[INFO ] [2021-08-06 22:27:44,234] User_02_Login - Step 01: Click to Login link
+[INFO ] [2021-08-06 22:27:47,793] User_02_Login - Step 02: Enter to Email textbox with value: automationfc6868@mailinator.com
+[INFO ] [2021-08-06 22:27:47,947] User_02_Login - Step 03: Enter to Password textbox with value: 123456
+[INFO ] [2021-08-06 22:27:48,072] User_02_Login - Step 04: Click to Login button
