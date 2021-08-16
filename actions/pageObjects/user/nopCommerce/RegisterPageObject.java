@@ -9,8 +9,8 @@ import pageUIs.user.nopCommerce.RegisterPageUI;
 public class RegisterPageObject extends BasePage {
 	private WebDriver driver;
 	
-	public RegisterPageObject(WebDriver _driver) {
-		this.driver = _driver;
+	public RegisterPageObject(WebDriver driver) {
+		this.driver = driver;
 	}
 	
 	@Step("Click to Gender Male radio")

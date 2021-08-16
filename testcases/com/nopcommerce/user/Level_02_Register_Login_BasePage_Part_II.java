@@ -43,7 +43,7 @@ public class Level_02_Register_Login_BasePage_Part_II {
 	public void TC_01_Register( ) {
 		basePage.clickToElement(driver, "//a[@class='ico-register']");
 		
-		basePage.checkToCheckboxRadio(driver, "//input[@id='gender-male']");
+		basePage.checkToCheckboxOrRadio(driver, "//input[@id='gender-male']");
 		
 		basePage.sendkeyToElement(driver, "//input[@id='FirstName']", firstName);
 		basePage.sendkeyToElement(driver, "//input[@id='LastName']", lastName);
@@ -55,7 +55,7 @@ public class Level_02_Register_Login_BasePage_Part_II {
 		basePage.sendkeyToElement(driver, "//input[@id='Email']", emailAddress);
 		basePage.sendkeyToElement(driver, "//input[@id='Company']", companyName);
 		
-		basePage.checkToCheckboxRadio(driver, "//input[@id='Newsletter']");
+		basePage.checkToCheckboxOrRadio(driver, "//input[@id='Newsletter']");
 		
 		basePage.sendkeyToElement(driver, "//input[@id='Password']", password);
 		basePage.sendkeyToElement(driver, "//input[@id='ConfirmPassword']", password);

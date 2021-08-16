@@ -9,8 +9,8 @@ import pageUIs.user.nopCommerce.HomePageUI;
 public class HomePageObject extends BasePage {
 	private WebDriver driver;
 	
-	public HomePageObject(WebDriver _driver) {
-		this.driver = _driver;
+	public HomePageObject(WebDriver driver) {
+		this.driver = driver;
 	}
 	
 	@Step("Click to Register link")

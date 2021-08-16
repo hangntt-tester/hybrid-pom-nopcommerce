@@ -1,21 +1,5 @@
-[INFO ] [2021-08-06 22:27:26,032] ---------- START delete file in folder ----------
-[INFO ] [2021-08-06 22:27:26,033] ---------- END delete file in folder ----------
-[INFO ] [2021-08-06 22:27:30,726] User_01_Register - Step 01: Click to Register link
-[INFO ] [2021-08-06 22:27:35,592] User_01_Register - Step 02: Click to Male radio button
-[INFO ] [2021-08-06 22:27:35,744] User_01_Register - Step 03: Enter to Firstname textbox
-[INFO ] [2021-08-06 22:27:35,900] User_01_Register - Step 04: Enter to Lastname textbox
-[INFO ] [2021-08-06 22:27:36,049] User_01_Register - Step 05: Select Day dropdown
-[INFO ] [2021-08-06 22:27:36,173] User_01_Register - Step 06: Select Month dropdown
-[INFO ] [2021-08-06 22:27:36,298] User_01_Register - Step07: Select Year dropdown
-[INFO ] [2021-08-06 22:27:36,424] User_01_Register - Step 08: Enter to Email textbox with value: automationfc6868@mailinator.com
-[INFO ] [2021-08-06 22:27:36,578] User_01_Register - Step 09: Enter to Company textbox with value: Automation FC
-[INFO ] [2021-08-06 22:27:36,726] User_01_Register - Step 10: Enter to Password textbox with value: 123456
-[INFO ] [2021-08-06 22:27:36,864] User_01_Register - Step 11: Enter to Confirm Password textbox with value: 123456
-[INFO ] [2021-08-06 22:27:37,006] User_01_Register - Step 12: Click to Register button
-[INFO ] [2021-08-06 22:27:39,145] User_01_Register - Step 13: Verify success Message is displayed
-[INFO ] [2021-08-06 22:27:39,211]  -------------------------- FAILED -------------------------- 
-[INFO ] [2021-08-06 22:27:39,215] User_01_Register - Step 14: Click to Logout link
-[INFO ] [2021-08-06 22:27:44,234] User_02_Login - Step 01: Click to Login link
-[INFO ] [2021-08-06 22:27:47,793] User_02_Login - Step 02: Enter to Email textbox with value: automationfc6868@mailinator.com
-[INFO ] [2021-08-06 22:27:47,947] User_02_Login - Step 03: Enter to Password textbox with value: 123456
-[INFO ] [2021-08-06 22:27:48,072] User_02_Login - Step 04: Click to Login button
+[INFO ] [2021-08-16 20:31:22,054] Pre-condition: Open browser 'firefox' and navigate to 'https://demo.nopcommerce.com/'
+[INFO ] [2021-08-16 20:31:28,906] Pre-condition - Step 01: Click to Login link
+[INFO ] [2021-08-16 20:31:30,432] Pre-condition - Step 02: Set login page Cookie
+[INFO ] [2021-08-16 20:31:37,430] Post-Condition: Close browser'firefox'
+[INFO ] [2021-08-16 20:31:37,431] OS name = windows 10

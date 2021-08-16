@@ -18,7 +18,7 @@ import pageObjects.user.nopCommerce.PageGeneratorManager;
 import pageObjects.user.nopCommerce.RegisterPageObject;
 import pageObjects.user.nopCommerce.SearchPageObject;
 
-public class Level_13_Register_Login_Log_ReportNG extends BaseTest{
+public class Level_15_Register_Login_Pattern_Object extends BaseTest{
 	WebDriver driver;
 	HomePageObject homePage;
 	LoginPageObject loginPage;
@@ -52,61 +52,65 @@ public class Level_13_Register_Login_Log_ReportNG extends BaseTest{
 	@Test
 	public void User_01_Register( ) {
 		log.info("User_01_Register - Step 01: Click to Register link");
-		registerPage = homePage.clickToRegisterLink();
+		homePage.openHeaderPageByName(driver, "Register");
+		registerPage = PageGeneratorManager.getRegisterPage(driver);
 		
 		log.info("User_01_Register - Step 02: Click to Male radio button");
-		registerPage.clickToGenderMaleRadio();
+		registerPage.clickToRadioButtonByID(driver, "gender-male");
 		
 		log.info("User_01_Register - Step 03: Enter to Firstname textbox");
-		registerPage.enterToFirstNameTextbox(firstName);
+		registerPage.enterToTextboxByID(driver, "FirstName", firstName);
 		
 		log.info("User_01_Register - Step 04: Enter to Lastname textbox");
-		registerPage.enterToLastNameTextbox(lastName);
+		registerPage.enterToTextboxByID(driver, "LastName", lastName);
 		
 		log.info("User_01_Register - Step 05: Select Day dropdown");
-		registerPage.selectDayDropdown(day);
+		registerPage.selectDropdownByName(driver, "DateOfBirthDay", day);
 		
 		log.info("User_01_Register - Step 06: Select Month dropdown");
-		registerPage.selectMonthDropdown(month);
+		registerPage.selectDropdownByName(driver, "DateOfBirthMonth", month);
 		
 		log.info("User_01_Register - Step07: Select Year dropdown");
-		registerPage.selectYearDropdown(year);
+		registerPage.selectDropdownByName(driver, "DateOfBirthYear", year);
 		
 		log.info("User_01_Register - Step 08: Enter to Email textbox with value: " + emailAddress);
-		registerPage.enterToEmailTextbox(emailAddress);
+		registerPage.enterToTextboxByID(driver, "Email", emailAddress);
 		
 		log.info("User_01_Register - Step 09: Enter to Company textbox with value: " + companyName);
-		registerPage.enterToCompanyTextbox(companyName);
+		registerPage.enterToTextboxByID(driver, "Company", companyName);
 		
 		log.info("User_01_Register - Step 10: Enter to Password textbox with value: " + password);
-		registerPage.enterToPasswordTextbox(password);
+		registerPage.enterToTextboxByID(driver, "Password", password);
 		
 		log.info("User_01_Register - Step 11: Enter to Confirm Password textbox with value: " + password);
-		registerPage.enterToConfirmasswordTextbox(password);
+		registerPage.enterToTextboxByID(driver, "ConfirmPassword", password);
 		
 		log.info("User_01_Register - Step 12: Click to Register button");
-		registerPage.clickToRegisterButton();
+		registerPage.clickToButtonByText(driver, "Register");
 		
 		log.info("User_01_Register - Step 13: Verify success Message is displayed");
-		verifyFalse(registerPage.isRegisterSuccessMessageDisplayed()); // cố tình cho nó false
+		verifyTrue(registerPage.isRegisterSuccessMessageDisplayed()); 
 		
 		log.info("User_01_Register - Step 14: Click to Logout link");
-		homePage = registerPage.clickToLogoutLink();
+		registerPage.openHeaderPageByName(driver, "Log out");
+		homePage = PageGeneratorManager.getHomePage(driver);
 		}
 	
 	@Test
 	public void User_02_Login( ) {
 		log.info("User_02_Login - Step 01: Click to Login link");
-		loginPage = homePage.clickToLoginLink();
+		homePage.openHeaderPageByName(driver, "Log in");
+		loginPage = PageGeneratorManager.getLoginPage(driver);
 		
 		log.info("User_02_Login - Step 02: Enter to Email textbox with value: " + emailAddress);
-		loginPage.enterToEmailTextbox(emailAddress);
+		loginPage.enterToTextboxByID(driver, "Email", emailAddress);
 		
 		log.info("User_02_Login - Step 03: Enter to Password textbox with value: " + password);
-		loginPage.enterToPasswordTextbox(password);
+		loginPage.enterToTextboxByID(driver, "Password", password);
 		
 		log.info("User_02_Login - Step 04: Click to Login button");
-		homePage = loginPage.clickToLoginButton();
+		loginPage.clickToButtonByText(driver, "Log in");
+		homePage = PageGeneratorManager.getHomePage(driver);
 	}
 	
 	@Parameters({"browser"})
