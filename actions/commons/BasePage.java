@@ -318,8 +318,16 @@ public class BasePage {
 		return getWebElement(driver, locator).isEnabled();
 	}
 	
+	public boolean isElementEnabled(WebDriver driver, String locator, String... params) {
+		return getWebElement(driver, getDynamicLocator(locator, params)).isEnabled();
+	}
+	
 	public boolean isElementSelected(WebDriver driver, String locator) {
 		return getWebElement(driver, locator).isSelected();
+	}
+	
+	public boolean isElementSelected(WebDriver driver, String locator, String... params) {
+		return getWebElement(driver, getDynamicLocator(locator, params)).isSelected();
 	}
 	
 	public void switchToFrame(WebDriver driver, String locator) {
@@ -657,6 +665,14 @@ public class BasePage {
 		sendkeyToElement(driver, BasePageUI.TEXBOX_BY_ID, value, textboxIDName);
 	}
 	
+	public void enterToDatePickerByID(WebDriver driver, String textboxIDName, String value) {
+		waitForElementVisible(driver, BasePageUI.TEXBOX_BY_ID, textboxIDName);
+		sendkeyToElement(driver, BasePageUI.TEXBOX_BY_ID, value, textboxIDName);
+		clickToElement(driver, BasePageUI.IMG_PICKER, textboxIDName);
+		sleepInSecond(3);
+	}
+	
+	
 	/**
 	 * get textbox value by ID
 	 * @param driver
@@ -680,7 +696,7 @@ public class BasePage {
 	 * @return Selected text in dropdown
 	 */
 	public String getSelectedValueInDropdownByID(WebDriver driver, String dropdownIDName) {
-		waitForElementClickAble(driver, BasePageUI.DROPDOWN_BY_ID, dropdownIDName);
+		waitForElementVisible(driver, BasePageUI.DROPDOWN_BY_ID, dropdownIDName);
 		return getFirstSelectedItemInDefaultDropdown(driver, BasePageUI.DROPDOWN_BY_ID, dropdownIDName);
 	}
 	
@@ -690,12 +706,23 @@ public class BasePage {
 		checkToCheckboxOrRadio(driver, BasePageUI.CHECKBOX_BY_LABEL, checkboxLabelName);
 	}
 	
-	//  RADIO BUTTON
+	public boolean isCheckboxSelectedByLabel(WebDriver driver, String checkboxLabelName) {
+		waitForElementVisible(driver, BasePageUI.CHECKBOX_BY_LABEL, checkboxLabelName);
+		return isElementSelected(driver, BasePageUI.CHECKBOX_BY_LABEL, checkboxLabelName);
+	}
+	 
+	
+	// RADIO BUTTON
 	public void clickToRadioButtonByLabel(WebDriver driver, String radioButtonLabelName) {
 		waitForElementClickAble(driver, BasePageUI.RADIO_BUTTON_BY_LABEL, radioButtonLabelName);
 		checkToCheckboxOrRadio(driver, BasePageUI.RADIO_BUTTON_BY_LABEL, radioButtonLabelName);
 	}
 	
+	public boolean isRadioButtonSelectedByLabel(WebDriver driver, String radioButtonLabelName) {
+		waitForElementVisible(driver, BasePageUI.RADIO_BUTTON_BY_LABEL, radioButtonLabelName);
+		return isElementSelected(driver, BasePageUI.RADIO_BUTTON_BY_LABEL, radioButtonLabelName);
+	}
+	 
 	// Table
 	public String getValueInTableIDAtColumnNameAndRowIndex(WebDriver driver, String tableID, String headerName, String rowIndex) {
 		int columnIndex = getElementSize(driver, BasePageUI.TABLE_HEADER_BY_ID_AND_NAME, tableID, headerName) + 1;
@@ -717,6 +744,20 @@ public class BasePage {
 		sendkeyToElement(driver, BasePageUI.PASSWORD_LOGIN_TEXTBOX, password);
 		clickToElement(driver, BasePageUI.LOGIN_BUTTON);
 		return PageGenerator.getDashboardPage(driver);
+	}
+	
+	public void uploadImage(WebDriver driver, String filePath) {
+		getWebElement(driver, BasePageUI.UPLOAD_FILE).sendKeys(filePath);
+	}
+	
+	public boolean isSuccessMessageDisplayed(WebDriver driver, String successMessage) {
+		waitForElementVisible(driver, BasePageUI.SUCCESS_MESSAGE_NAME, successMessage);
+		return isElementDisplayed(driver, BasePageUI.SUCCESS_MESSAGE_NAME, successMessage);
+	}
+	
+	public boolean isFieldEnableByName(WebDriver driver, String fieldID) {
+		waitForElementVisible(driver, BasePageUI.ANY_FIELD_BY_ID, fieldID);
+		return isElementEnabled(driver, BasePageUI.ANY_FIELD_BY_ID, fieldID);
 	}
 	
 	private Alert alert;
