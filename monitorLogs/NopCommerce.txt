@@ -1,5 +1,0 @@
-[INFO ] [2021-08-16 20:31:22,054] Pre-condition: Open browser 'firefox' and navigate to 'https://demo.nopcommerce.com/'
-[INFO ] [2021-08-16 20:31:28,906] Pre-condition - Step 01: Click to Login link
-[INFO ] [2021-08-16 20:31:30,432] Pre-condition - Step 02: Set login page Cookie
-[INFO ] [2021-08-16 20:31:37,430] Post-Condition: Close browser'firefox'
-[INFO ] [2021-08-16 20:31:37,431] OS name = windows 10
