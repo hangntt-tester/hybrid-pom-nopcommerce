@@ -6,6 +6,8 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import com.hrm.datatest.EmployeeData;
+
 import commons.BaseTest;
 import commons.GlobalConstants;
 import pageObject.employee.hrm.AddEmployeePO;
@@ -13,16 +15,11 @@ import pageObject.employee.hrm.DashboardPO;
 import pageObject.employee.hrm.EmployeeListPO;
 import pageObject.employee.hrm.EmployeeSearchPO;
 import pageObject.employee.hrm.LoginPO;
-import pageObject.employee.hrm.PageGenerator;
 import pageObject.employee.hrm.MyInfoPO;
+import pageObject.employee.hrm.PageGenerator;
 
-public class Level_16_Living_Coding extends BaseTest {
-	String adminUser, adminPassword, empFristName, empLastName, empFullName, empUserName, empPassword, statusLogin, employeeID;
-	String editEmpFristName, editEmpLastName, editEmpGender, editEmpMaritalStatus, editEmpNationality, editEmpFullName;
-	String empAddressStreet1, empCity, empProvince, empCountry, empMobile, empWorkEmail;
-	String emgContactsName, emgContactsRelationship, emgContactsHomePhone;
-	String empDependentName, empDependentRelationship, empDependentDOP;
-	String empJobTitle, empJobStatus, empJobCategory, empJoinedDate, empSubUnit, empJobLocation, empContractStartDate, empContractEndDate; 
+public class Level_20_DataTest_Data_Driven extends BaseTest {
+	String employeeID;
 	String avatarFilePath = GlobalConstants.UPLOAD_FOLDER_PATH + "Avatar.jpg";
 	
 	@Parameters({"browser", "url"})
@@ -31,48 +28,10 @@ public class Level_16_Living_Coding extends BaseTest {
 		log.info("Pre-condition - Step 01: Open browser '" + browserName + "' and navigate to '" + appUrl + "'");
 		driver = getBrowserDriver(browserName, appUrl);
 		loginPage = PageGenerator.getLoginPage(driver);
-		
-		statusLogin = "Enabled";
-		adminUser = "Admin"; 
-		adminPassword = "admin123"; 
-		empFristName = "Automation"; 
-		empLastName = "FC"; 
-		empFullName = empFristName + " " + empLastName; 
-		empUserName = "automation123@gmail.com"; 
-		empPassword = "12345678";
-		
-		editEmpFristName = "John";
-		editEmpLastName = "Wick";
-		editEmpFullName = editEmpFristName + " " + editEmpLastName;
-		editEmpGender = "Male";
-		editEmpMaritalStatus = "Single";
-		editEmpNationality = "Vietnamese";
-		
-		empAddressStreet1 = "25 Le Van Luong";
-		empCity = "Ha Noi";
-		empCountry = "Viet Nam";
-		empMobile = "0986254213";
-		empWorkEmail = "autofc1256@gmail.com";
-		
-		emgContactsName = "John Smith";
-		emgContactsRelationship = "Wife";
-		emgContactsHomePhone = "0915246525";
-		
-		empDependentName = "John Henry";
-		empDependentRelationship = "Child";
-		empDependentDOP = "2015-05-25";
-		
-		empJobTitle = "QA Engineer";
-		empJobStatus = "Full-Time Contract";
-		empJobCategory = "Technicians";
-		empJoinedDate = "2020-04-01";
-		empSubUnit = "Engineering";
-		empJobLocation = "HQ - CA, USA";
-		empContractStartDate = "2020-04-01";
-		empContractEndDate = "2023-03-31";
+		employeeData = EmployeeData.getEmployee();
 		
 		log.info("Pre-condition - Step 02: Login with Account Admin");
-		dashboardPage = loginPage.loginToSystem(driver, adminUser, adminPassword);
+		dashboardPage = loginPage.loginToSystem(driver, employeeData.getAdminuser(), employeeData.getAdminpassword());
 	}
 	
 	@Test
@@ -86,10 +45,10 @@ public class Level_16_Living_Coding extends BaseTest {
 		addEmployeePage = PageGenerator.getAddEmployeePage(driver);
 		
 		log.info("Add_New_01 - Step 03: Enter valid info to First Name textbox");
-		addEmployeePage.enterToTextboxByID(driver, "firstName", empFristName);
+		addEmployeePage.enterToTextboxByID(driver, "firstName", employeeData.getFirstname());
 		
 		log.info("Add_New_01 - Step 04: Enter valid info to Last Name textbox");
-		addEmployeePage.enterToTextboxByID(driver, "lastName", empLastName);
+		addEmployeePage.enterToTextboxByID(driver, "lastName", employeeData.getLastname());
 		
 		log.info("Add_New_01 - Step 05: Get value of Employee ID");
 		employeeID = addEmployeePage.getTextboxValueByID(driver, "employeeId");
@@ -98,16 +57,16 @@ public class Level_16_Living_Coding extends BaseTest {
 		addEmployeePage.clickToCheckboxByLabel(driver, "Create Login Details");
 		
 		log.info("Add_New_01 - Step 07: Enter valid info to User Name textbox");
-		addEmployeePage.enterToTextboxByID(driver, "user_name", empUserName);
+		addEmployeePage.enterToTextboxByID(driver, "user_name", employeeData.getUsername());
 		
 		log.info("Add_New_01 - Step 08: Enter valid info to Password textbox");
-		addEmployeePage.enterToTextboxByID(driver, "user_password", empPassword);
+		addEmployeePage.enterToTextboxByID(driver, "user_password", employeeData.getPassword());
 		
 		log.info("Add_New_01 - Step 09: Enter valid info to Confirm Password textbox");
-		addEmployeePage.enterToTextboxByID(driver, "re_password", empPassword);
+		addEmployeePage.enterToTextboxByID(driver, "re_password", employeeData.getPassword());
 		
-		log.info("Add_New_01 - Step 10: Select '" + statusLogin + "' value in 'Status' dropdown");
-		addEmployeePage.selectToDropdownByID(driver, "status", statusLogin);
+		log.info("Add_New_01 - Step 10: Select '" + employeeData.getStatus() + "' value in 'Status' dropdown");
+		addEmployeePage.selectToDropdownByID(driver, "status", employeeData.getStatus());
 		
 		log.info("Add_New_01 - Step 11: Click to 'Save' button");
 		addEmployeePage.clickToButtonByID(driver, "btnSave");
@@ -119,7 +78,7 @@ public class Level_16_Living_Coding extends BaseTest {
 		
 		log.info("Add_New_01 - Step 13: Enter valid info to Employee Name textbox");
 		verifyTrue(employeeListPage.isJQueryAJAXCallsHaveCompleted(driver));
-		employeeListPage.enterToTextboxByID(driver, "empsearch_employee_name_empName", empFullName);
+		employeeListPage.enterToTextboxByID(driver, "empsearch_employee_name_empName", employeeData.getFullname());
 		verifyTrue(employeeListPage.isJQueryAJAXCallsHaveCompleted(driver));
 		
 		log.info("Add_New_01 - Step 14: Click to 'Search' button");
@@ -128,8 +87,8 @@ public class Level_16_Living_Coding extends BaseTest {
 		
 		log.info("Add_New_01 - Step 15: Verify Employee Info displayed with ID, FristName, LastName at 'Result Table' ");
 		verifyEquals(employeeListPage.getValueInTableIDAtColumnNameAndRowIndex(driver, "resultTable", "Id", "1"), employeeID);
-		verifyEquals(employeeListPage.getValueInTableIDAtColumnNameAndRowIndex(driver, "resultTable", "First (& Middle) Name", "1"), empFristName);
-		verifyEquals(employeeListPage.getValueInTableIDAtColumnNameAndRowIndex(driver, "resultTable", "Last Name", "1"), empLastName);
+		verifyEquals(employeeListPage.getValueInTableIDAtColumnNameAndRowIndex(driver, "resultTable", "First (& Middle) Name", "1"), employeeData.getFirstname());
+		verifyEquals(employeeListPage.getValueInTableIDAtColumnNameAndRowIndex(driver, "resultTable", "Last Name", "1"), employeeData.getLastname());
 	}
 	
 	@Test
@@ -138,7 +97,7 @@ public class Level_16_Living_Coding extends BaseTest {
 		loginPage = employeeListPage.logoutToSystem(driver);
 		
 		log.info("UPload_Avatar_02 - Step 02: Login to System with account Employee");
-		dashboardPage = loginPage.loginToSystem(driver, empUserName, empPassword);
+		dashboardPage = loginPage.loginToSystem(driver, employeeData.getUsername(), employeeData.getPassword());
 		
 		log.info("UPload_Avatar_02 - Step 03: Open Personal Details page");
 		dashboardPage.openMenuPage(driver, "My Info");
@@ -202,19 +161,19 @@ public class Level_16_Living_Coding extends BaseTest {
 		verifyFalse(myInfoPage.isFieldEnableByName(driver, "personal_DOB"));
 		
 		log.info("Personal_Details_03 - Step 09: Enter new value to 'First Name' textbox");
-		myInfoPage.enterToTextboxByID(driver, "personal_txtEmpFirstName", editEmpFristName);
+		myInfoPage.enterToTextboxByID(driver, "personal_txtEmpFirstName", employeeData.getEditfirstname());
 		
 		log.info("Personal_Details_03 - Step 10: Enter new value to 'Last Name' textbox");
-		myInfoPage.enterToTextboxByID(driver, "personal_txtEmpLastName", editEmpLastName);
+		myInfoPage.enterToTextboxByID(driver, "personal_txtEmpLastName", employeeData.getEditlastname());
 		
 		log.info("Personal_Details_03 - Step 11: Select new value to 'Gender' radio button");
-		myInfoPage.clickToRadioButtonByLabel(driver, editEmpGender);
+		myInfoPage.clickToRadioButtonByLabel(driver, employeeData.getGender());
 		
 		log.info("Personal_Details_03 - Step 12: Select new value to 'Marital Status' dropdown");
-		myInfoPage.selectToDropdownByID(driver, "personal_cmbMarital", editEmpMaritalStatus);
+		myInfoPage.selectToDropdownByID(driver, "personal_cmbMarital", employeeData.getMaritalstatus());
 		
 		log.info("Personal_Details_03 - Step 13: Select new value to 'Nationality' dropdown");
-		myInfoPage.selectToDropdownByID(driver, "personal_cmbNation", editEmpNationality);
+		myInfoPage.selectToDropdownByID(driver, "personal_cmbNation", employeeData.getNationality());
 		
 		log.info("Personal_Details_03 - Step 14: Click to Save button at 'Personal Details' form");
 		myInfoPage.clickToButtonByID(driver, "btnSave");
@@ -223,19 +182,19 @@ public class Level_16_Living_Coding extends BaseTest {
 		verifyTrue(myInfoPage.isSuccessMessageDisplayed(driver, "Successfully Saved"));
 		
 		log.info("Personal_Details_03 - Step 16: Verify 'First Name' textbox is updated success");
-		verifyEquals(myInfoPage.getTextboxValueByID(driver, "personal_txtEmpFirstName"), editEmpFristName);
+		verifyEquals(myInfoPage.getTextboxValueByID(driver, "personal_txtEmpFirstName"), employeeData.getEditfirstname());
 		
 		log.info("Personal_Details_03 - Step 17: Verify 'Last Name' textbox is updated success");
-		verifyEquals(myInfoPage.getTextboxValueByID(driver, "personal_txtEmpLastName"), editEmpLastName);
+		verifyEquals(myInfoPage.getTextboxValueByID(driver, "personal_txtEmpLastName"), employeeData.getEditlastname());
 		
 		log.info("Personal_Details_03 - Step 18: Verify 'Gender' radio button is updated success");
-		verifyTrue(myInfoPage.isRadioButtonSelectedByLabel(driver, editEmpGender));
+		verifyTrue(myInfoPage.isRadioButtonSelectedByLabel(driver, employeeData.getGender()));
 		
 		log.info("Personal_Details_03 - Step 19: Verify 'Marital Status' dropdown is updated success");
-		verifyEquals(myInfoPage.getSelectedValueInDropdownByID(driver, "personal_cmbMarital"), editEmpMaritalStatus);
+		verifyEquals(myInfoPage.getSelectedValueInDropdownByID(driver, "personal_cmbMarital"), employeeData.getMaritalstatus());
 		
 		log.info("Personal_Details_03 - Step 20: Verify 'Nationality' dropdown is updated success");
-		verifyEquals(myInfoPage.getSelectedValueInDropdownByID(driver, "personal_cmbNation"), editEmpNationality);
+		verifyEquals(myInfoPage.getSelectedValueInDropdownByID(driver, "personal_cmbNation"), employeeData.getNationality());
 		
 		log.info("Personal_Details_03 - Step 21: Verify Employee ID textbox is correct");
 		verifyEquals(myInfoPage.getTextboxValueByID(driver, "personal_txtEmployeeId"), employeeID);
@@ -263,19 +222,19 @@ public class Level_16_Living_Coding extends BaseTest {
 		myInfoPage.clickToButtonByID(driver, "btnSave");
 		
 		log.info("Contact_Details_04 - Step 04: Enter value to 'Address Street 1' textbox");
-		myInfoPage.enterToTextboxByID(driver, "contact_street1", empAddressStreet1);
+		myInfoPage.enterToTextboxByID(driver, "contact_street1", employeeData.getAddressstreet());
 		
 		log.info("Contact_Details_04 - Step 05: Enter value to 'City' textbox");
-		myInfoPage.enterToTextboxByID(driver, "contact_city", empCity);
+		myInfoPage.enterToTextboxByID(driver, "contact_city", employeeData.getCity());
 		
 		log.info("Contact_Details_04 - Step 06: Select value to 'Country' dropdown");
-		myInfoPage.selectToDropdownByID(driver, "contact_country", empCountry);
+		myInfoPage.selectToDropdownByID(driver, "contact_country", employeeData.getCountry());
 		
 		log.info("Contact_Details_04 - Step 07: Enter value to 'Mobile' textbox");
-		myInfoPage.enterToTextboxByID(driver, "contact_emp_mobile", empMobile);
+		myInfoPage.enterToTextboxByID(driver, "contact_emp_mobile", employeeData.getMobile());
 		
 		log.info("Contact_Details_04 - Step 08: Enter value to 'Work Email' textbox");
-		myInfoPage.enterToTextboxByID(driver, "contact_emp_work_email", empWorkEmail);
+		myInfoPage.enterToTextboxByID(driver, "contact_emp_work_email", employeeData.getWorkemail());
 		
 		log.info("Contact_Details_04 - Step 09: Click 'Save' button at 'Contact Details' form");
 		myInfoPage.clickToButtonByID(driver, "btnSave");
@@ -284,19 +243,19 @@ public class Level_16_Living_Coding extends BaseTest {
 		verifyTrue(myInfoPage.isSuccessMessageDisplayed(driver, "Successfully Saved"));
 		
 		log.info("Contact_Details_04 - Step 11: Verify 'Address Street 1' textbox is updated success");
-		verifyEquals(myInfoPage.getTextboxValueByID(driver, "contact_street1"), empAddressStreet1);
+		verifyEquals(myInfoPage.getTextboxValueByID(driver, "contact_street1"), employeeData.getAddressstreet());
 		
 		log.info("Contact_Details_04 - Step 12: Verify 'City' textbox is updated success");
-		verifyEquals(myInfoPage.getTextboxValueByID(driver, "contact_city"), empCity);
+		verifyEquals(myInfoPage.getTextboxValueByID(driver, "contact_city"), employeeData.getCity());
 		
 		log.info("Contact_Details_04 - Step 13: Verify 'Country' dropdown is updated success");
-		verifyEquals(myInfoPage.getSelectedValueInDropdownByID(driver, "contact_country"), empCountry);
+		verifyEquals(myInfoPage.getSelectedValueInDropdownByID(driver, "contact_country"), employeeData.getCountry());
 		
 		log.info("Contact_Details_04 - Step 14: Verify 'Mobile' textbox is updated success");
-		verifyEquals(myInfoPage.getTextboxValueByID(driver, "contact_emp_mobile"), empMobile);
+		verifyEquals(myInfoPage.getTextboxValueByID(driver, "contact_emp_mobile"), employeeData.getMobile());
 		
 		log.info("Contact_Details_04 - Step 15: Verify 'Work Email' textbox is updated success");
-		verifyEquals(myInfoPage.getTextboxValueByID(driver, "contact_emp_work_email"), empWorkEmail);
+		verifyEquals(myInfoPage.getTextboxValueByID(driver, "contact_emp_work_email"), employeeData.getWorkemail());
 	}
 	
 	@Test
@@ -320,13 +279,13 @@ public class Level_16_Living_Coding extends BaseTest {
 		verifyTrue(myInfoPage.isMessagePhoneDisplayed("emgcontacts_homePhone"));
 		
 		log.info("Emergency_Contacts_05 - Step 07: Enter value to Name textbox");
-		myInfoPage.enterToTextboxByID(driver, "emgcontacts_name", emgContactsName);
+		myInfoPage.enterToTextboxByID(driver, "emgcontacts_name", employeeData.getEmgname());
 		
 		log.info("Emergency_Contacts_05 - Step 08: Enter value to Relationship textbox");
-		myInfoPage.enterToTextboxByID(driver, "emgcontacts_relationship", emgContactsRelationship);
+		myInfoPage.enterToTextboxByID(driver, "emgcontacts_relationship", employeeData.getEmgrelationship());
 		
 		log.info("Emergency_Contacts_05 - Step 09: Enter value to Home Telephone textbox");
-		myInfoPage.enterToTextboxByID(driver, "emgcontacts_homePhone", emgContactsHomePhone);
+		myInfoPage.enterToTextboxByID(driver, "emgcontacts_homePhone", employeeData.getEmghomephone());
 		
 		log.info("Emergency_Contacts_05 - Step 10: Click 'Save' button at 'Add Emergency Contacts' form");
 		myInfoPage.clickToButtonByID(driver, "btnSaveEContact");
@@ -335,9 +294,9 @@ public class Level_16_Living_Coding extends BaseTest {
 		verifyTrue(myInfoPage.isSuccessMessageDisplayed(driver, "Successfully Saved"));
 		
 		log.info("Emergency_Contacts_05 - Step 12: Verify Emergency Contacts displayed with Name, Relationship, LastHome Telephone at 'Emgcontact List' table ");
-		verifyEquals(myInfoPage.getValueInTableIDAtColumnNameAndRowIndex(driver, "emgcontact_list", "Name", "1"), emgContactsName);
-		verifyEquals(myInfoPage.getValueInTableIDAtColumnNameAndRowIndex(driver, "emgcontact_list", "Relationship", "1"), emgContactsRelationship);
-		verifyEquals(myInfoPage.getValueInTableIDAtColumnNameAndRowIndex(driver, "emgcontact_list", "Home Telephone", "1"), emgContactsHomePhone);
+		verifyEquals(myInfoPage.getValueInTableIDAtColumnNameAndRowIndex(driver, "emgcontact_list", "Name", "1"), employeeData.getEmgname());
+		verifyEquals(myInfoPage.getValueInTableIDAtColumnNameAndRowIndex(driver, "emgcontact_list", "Relationship", "1"), employeeData.getEmgrelationship());
+		verifyEquals(myInfoPage.getValueInTableIDAtColumnNameAndRowIndex(driver, "emgcontact_list", "Home Telephone", "1"), employeeData.getEmghomephone());
 	}
 	
 	@Test
@@ -358,13 +317,13 @@ public class Level_16_Living_Coding extends BaseTest {
 		verifyTrue(myInfoPage.isMessageRequiredDisplayed("dependent_relationshipType"));
 		
 		log.info("Assigned_Dependents_06 - Step 06: Enter value to Name textbox");
-		myInfoPage.enterToTextboxByID(driver, "dependent_name", empDependentName);
+		myInfoPage.enterToTextboxByID(driver, "dependent_name", employeeData.getDpname());
 		
 		log.info("Assigned_Dependents_06 - Step 07: Select value to Relationship dropdown");
-		myInfoPage.selectToDropdownByID(driver, "dependent_relationshipType", empDependentRelationship);
+		myInfoPage.selectToDropdownByID(driver, "dependent_relationshipType", employeeData.getDprelationship());
 		
 		log.info("Assigned_Dependents_06 - Step 08: Enter value to Date of Birth textbox");
-		myInfoPage.enterToDatePickerByID(driver, "dependent_dateOfBirth", empDependentDOP);
+		myInfoPage.enterToDatePickerByID(driver, "dependent_dateOfBirth", employeeData.getDpdop());
 		
 		log.info("Assigned_Dependents_06 - Step 09: Click 'Save' button at 'Assigned_Dependents' form");
 		myInfoPage.clickToButtonByID(driver, "btnSaveDependent");
@@ -373,9 +332,9 @@ public class Level_16_Living_Coding extends BaseTest {
 		verifyTrue(myInfoPage.isSuccessMessageDisplayed(driver, "Successfully Saved"));
 		
 		log.info("Assigned_Dependents_06 - Step 11: Verify Assigned Dependents Infor is displayed with Name, Relationship, DOB at 'Dependents List' table ");
-		verifyEquals(myInfoPage.getValueInTableIDAtColumnNameAndRowIndex(driver, "dependent_list", "Name", "1"), empDependentName);
-		verifyEquals(myInfoPage.getValueInTableIDAtColumnNameAndRowIndex(driver, "dependent_list", "Relationship", "1"), empDependentRelationship.toLowerCase());
-		verifyEquals(myInfoPage.getValueInTableIDAtColumnNameAndRowIndex(driver, "dependent_list", "Date of Birth", "1"), empDependentDOP);
+		verifyEquals(myInfoPage.getValueInTableIDAtColumnNameAndRowIndex(driver, "dependent_list", "Name", "1"), employeeData.getDpname());
+		verifyEquals(myInfoPage.getValueInTableIDAtColumnNameAndRowIndex(driver, "dependent_list", "Relationship", "1"), employeeData.getDprelationship().toLowerCase());
+		verifyEquals(myInfoPage.getValueInTableIDAtColumnNameAndRowIndex(driver, "dependent_list", "Date of Birth", "1"), employeeData.getDpdop());
 	}
 	
 	@Test
@@ -384,7 +343,7 @@ public class Level_16_Living_Coding extends BaseTest {
 		loginPage = myInfoPage.logoutToSystem(driver);
 		
 		log.info("Edit_View_Job_07 - Step 02: Login to System with account Admin");
-		dashboardPage = loginPage.loginToSystem(driver, adminUser, adminPassword);
+		dashboardPage = loginPage.loginToSystem(driver, employeeData.getAdminuser(), employeeData.getAdminpassword());
 		
 		log.info("Edit_View_Job_07 - Step 03: Open 'Employee List' Page");
 		dashboardPage.openSubMenuPage(driver, "PIM", "Employee List");
@@ -392,7 +351,7 @@ public class Level_16_Living_Coding extends BaseTest {
 		
 		log.info("Edit_View_Job_07 - Step 04: Enter valid info to Employee Name textbox");
 		verifyTrue(employeeListPage.isJQueryAJAXCallsHaveCompleted(driver));
-		employeeListPage.enterToTextboxByID(driver, "empsearch_employee_name_empName", editEmpFullName);
+		employeeListPage.enterToTextboxByID(driver, "empsearch_employee_name_empName", employeeData.getEditfullname());
 		verifyTrue(employeeListPage.isJQueryAJAXCallsHaveCompleted(driver));
 		
 		log.info("Edit_View_Job_07 - Step 05: Click to 'Search' button");
@@ -419,28 +378,28 @@ public class Level_16_Living_Coding extends BaseTest {
 		myInfoPage.clickToButtonByID(driver, "btnSave");
 		
 		log.info("Edit_View_Job_07 - Step 10: Select value to 'Job Title' dropdown");
-		myInfoPage.selectToDropdownByID(driver, "job_job_title", empJobTitle);
+		myInfoPage.selectToDropdownByID(driver, "job_job_title", employeeData.getJobtitle());
 		
 		log.info("Edit_View_Job_07 - Step 11: Select value to 'Employment Status' dropdown");
-		myInfoPage.selectToDropdownByID(driver, "job_emp_status", empJobStatus);
+		myInfoPage.selectToDropdownByID(driver, "job_emp_status", employeeData.getJobstatus());
 		
 		log.info("Edit_View_Job_07 - Step 12: Select value to 'Job Category' dropdown");
-		myInfoPage.selectToDropdownByID(driver, "job_eeo_category", empJobCategory);
+		myInfoPage.selectToDropdownByID(driver, "job_eeo_category", employeeData.getJobcategory());
 		
 		log.info("Edit_View_Job_07 - Step 13: Enter value to 'Joined Date' textbox");
-		myInfoPage.enterToDatePickerByID(driver, "job_joined_date", empJoinedDate);
+		myInfoPage.enterToDatePickerByID(driver, "job_joined_date", employeeData.getJoineddate());
 		
 		log.info("Edit_View_Job_07 - Step 14: Select value to 'Sub Unit' dropdown");
-		myInfoPage.selectToDropdownByID(driver, "job_sub_unit", empSubUnit);
+		myInfoPage.selectToDropdownByID(driver, "job_sub_unit", employeeData.getSubunit());
 		
 		log.info("Edit_View_Job_07 - Step 15: Select value to 'Location' dropdown");
-		myInfoPage.selectToDropdownByID(driver, "job_location", empJobLocation);
+		myInfoPage.selectToDropdownByID(driver, "job_location", employeeData.getJoblocation());
 		
 		log.info("Edit_View_Job_07 - Step 16: Enter value to 'Start Date' textbox");
-		myInfoPage.enterToDatePickerByID(driver, "job_contract_start_date", empContractStartDate);
+		myInfoPage.enterToDatePickerByID(driver, "job_contract_start_date", employeeData.getContractstartdate());
 		
 		log.info("Edit_View_Job_07 - Step 17: Enter value to 'End Date' textbox");
-		myInfoPage.enterToDatePickerByID(driver, "job_contract_end_date", empContractEndDate);
+		myInfoPage.enterToDatePickerByID(driver, "job_contract_end_date", employeeData.getContractenddate());
 		
 		log.info("Edit_View_Job_07 - Step 18: Click to 'Save' button");
 		myInfoPage.clickToButtonByID(driver, "btnSave");
@@ -449,28 +408,28 @@ public class Level_16_Living_Coding extends BaseTest {
 		verifyTrue(myInfoPage.isSuccessMessageDisplayed(driver, "Successfully Updated"));
 		
 		log.info("Edit_View_Job_07 - Step 20: Verify 'Job Title' dropdown is updated success");
-		verifyEquals(myInfoPage.getSelectedValueInDropdownByID(driver, "job_job_title"), empJobTitle);
+		verifyEquals(myInfoPage.getSelectedValueInDropdownByID(driver, "job_job_title"), employeeData.getJobtitle());
 		
 		log.info("Edit_View_Job_07 - Step 20: Verify 'Employment Status' dropdown is updated success");
-		verifyEquals(myInfoPage.getSelectedValueInDropdownByID(driver, "job_emp_status"), empJobStatus);
+		verifyEquals(myInfoPage.getSelectedValueInDropdownByID(driver, "job_emp_status"), employeeData.getJobstatus());
 		
 		log.info("Edit_View_Job_07 - Step 21: Verify 'Job Category' dropdown is updated success");
-		verifyEquals(myInfoPage.getSelectedValueInDropdownByID(driver, "job_eeo_category"), empJobCategory);
+		verifyEquals(myInfoPage.getSelectedValueInDropdownByID(driver, "job_eeo_category"), employeeData.getJobcategory());
 		
 		log.info("Edit_View_Job_07 - Step 22: Verify 'Joined Date' textbox is updated success");
-		verifyEquals(myInfoPage.getTextboxValueByID(driver, "job_joined_date"), empJoinedDate);
+		verifyEquals(myInfoPage.getTextboxValueByID(driver, "job_joined_date"), employeeData.getJoineddate());
 		
 		log.info("Edit_View_Job_07 - Step 23: Verify 'Sub Unit' dropdown is updated success");
-		verifyEquals(myInfoPage.getSelectedValueInDropdownByID(driver, "job_sub_unit"), empSubUnit);
+		verifyEquals(myInfoPage.getSelectedValueInDropdownByID(driver, "job_sub_unit"), employeeData.getSubunit());
 		
 		log.info("Edit_View_Job_07 - Step 24: Verify 'Location' dropdown is updated success");
-		verifyEquals(myInfoPage.getSelectedValueInDropdownByID(driver, "job_location"), empJobLocation);
+		verifyEquals(myInfoPage.getSelectedValueInDropdownByID(driver, "job_location"), employeeData.getJoblocation());
 		
 		log.info("Edit_View_Job_07 - Step 25: Verify 'Start Date' textbox is updated success");
-		verifyEquals(myInfoPage.getTextboxValueByID(driver, "job_contract_start_date"), empContractStartDate);
+		verifyEquals(myInfoPage.getTextboxValueByID(driver, "job_contract_start_date"), employeeData.getContractstartdate());
 		
 		log.info("Edit_View_Job_07 - Step 26: Verify 'End Date' textbox is updated success");
-		verifyEquals(myInfoPage.getTextboxValueByID(driver, "job_contract_end_date"), empContractEndDate);
+		verifyEquals(myInfoPage.getTextboxValueByID(driver, "job_contract_end_date"), employeeData.getContractenddate());
 	}
 	
 	@Test
@@ -512,4 +471,5 @@ public class Level_16_Living_Coding extends BaseTest {
 	EmployeeListPO employeeListPage;
 	EmployeeSearchPO employeeSearchPage;
 	MyInfoPO myInfoPage;
+	EmployeeData employeeData;
 }

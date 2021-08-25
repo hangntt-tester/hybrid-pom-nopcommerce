@@ -13,7 +13,7 @@
 	<test name="Run on FIREFOX">
 		<parameter name="browser" value="firefox" />
 		<classes>
-			<class name="com.hrm.employee.Level_16_Living_Coding"/>  
+			<class name="com.hrm.employee.Level_20_DataTest_Data_Driven"/>  
 		</classes>
 	</test>
 	

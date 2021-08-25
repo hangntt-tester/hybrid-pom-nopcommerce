@@ -1,0 +1,53 @@
+{
+	"Role":{
+		"adminuser":"Admin",	
+		"adminpassword":"admin123"
+	},
+	
+	"PersonalDetail":{
+		"firstname":"John",
+		"lastname":"Wick",
+		"fullname":"John Wick",
+		"username":"johnwick152",
+		"password":"john12$$$",
+		"gender":"Male",	
+		"maritalstatus":"Single",	
+		"nationality":"Vietnamese",	
+		"status":"Enabled",	
+		"editfirstname":"Therry",	
+		"editlastname":"Herry",	
+		"editfullname":"Therry Herry"	
+	},
+	
+	"ContactDetail":{
+		"addressstreet":"25 Le Van Luong",
+		"city":"Ha Noi",
+		"country":"Viet Nam",
+		"mobile":"0986254213",
+		"workemail":"autofc1256@gmail.com"
+	},
+	
+	"EmergencyContact":{
+		"emgname":"John Smith",
+		"emgrelationship":"Wife",
+		"emghomephone":"0915246525"
+	},
+	
+	"AssignedDependent":{
+		"dpname":"John Henry",
+		"dprelationship":"Child",
+		"dpdop":"2015-05-25"
+	},
+	
+	"Job":{
+		"jobtitle":"QA Engineer",
+		"jobstatus":"Full-Time Contract",
+		"jobcategory":"Technicians",
+		"joineddate":"2020-04-01",
+		"subunit":"Engineering",
+		"joblocation":"HQ - CA, USA",
+		"contractstartdate":"2020-04-01",
+		"contractenddate":"2023-03-31"
+	}
+	
+}

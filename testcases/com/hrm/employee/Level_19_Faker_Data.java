@@ -13,10 +13,11 @@ import pageObject.employee.hrm.DashboardPO;
 import pageObject.employee.hrm.EmployeeListPO;
 import pageObject.employee.hrm.EmployeeSearchPO;
 import pageObject.employee.hrm.LoginPO;
-import pageObject.employee.hrm.PageGenerator;
 import pageObject.employee.hrm.MyInfoPO;
+import pageObject.employee.hrm.PageGenerator;
+import utilities.DataUtil;
 
-public class Level_16_Living_Coding extends BaseTest {
+public class Level_19_Faker_Data extends BaseTest {
 	String adminUser, adminPassword, empFristName, empLastName, empFullName, empUserName, empPassword, statusLogin, employeeID;
 	String editEmpFristName, editEmpLastName, editEmpGender, editEmpMaritalStatus, editEmpNationality, editEmpFullName;
 	String empAddressStreet1, empCity, empProvince, empCountry, empMobile, empWorkEmail;
@@ -31,18 +32,19 @@ public class Level_16_Living_Coding extends BaseTest {
 		log.info("Pre-condition - Step 01: Open browser '" + browserName + "' and navigate to '" + appUrl + "'");
 		driver = getBrowserDriver(browserName, appUrl);
 		loginPage = PageGenerator.getLoginPage(driver);
+		fakeData = DataUtil.getData();
 		
 		statusLogin = "Enabled";
 		adminUser = "Admin"; 
 		adminPassword = "admin123"; 
-		empFristName = "Automation"; 
-		empLastName = "FC"; 
+		empFristName = fakeData.getFirstName(); 
+		empLastName = fakeData.getLastName();
 		empFullName = empFristName + " " + empLastName; 
-		empUserName = "automation123@gmail.com"; 
-		empPassword = "12345678";
+		empUserName = fakeData.getUsername();  
+		empPassword = fakeData.getPassword();
 		
-		editEmpFristName = "John";
-		editEmpLastName = "Wick";
+		editEmpFristName = fakeData.getFirstName();
+		editEmpLastName = fakeData.getLastName();
 		editEmpFullName = editEmpFristName + " " + editEmpLastName;
 		editEmpGender = "Male";
 		editEmpMaritalStatus = "Single";
@@ -512,4 +514,5 @@ public class Level_16_Living_Coding extends BaseTest {
 	EmployeeListPO employeeListPage;
 	EmployeeSearchPO employeeSearchPage;
 	MyInfoPO myInfoPage;
+	DataUtil fakeData;
 }
